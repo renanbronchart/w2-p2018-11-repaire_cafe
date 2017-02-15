@@ -1,7 +1,9 @@
-body {
-  display: flex;
-  background-color: red;
-  h1 {
-    color: black;
-  }
-}
+@import 'vendors/style';
+
+@import 'helpers/style';
+
+@import 'global/style';
+
+@import 'blocs/style';
+
+@import 'components/style';
