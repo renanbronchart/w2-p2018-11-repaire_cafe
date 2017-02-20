@@ -1,9 +1,0 @@
-@mixin displayFlex() {
-  display: -webkit-flex; /* Safari */
-  display: flex;
-}
-
-@mixin alignItem() {
-  align-items: center;
-  -webkit-align-items: center;
-}
