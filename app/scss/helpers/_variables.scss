@@ -12,12 +12,9 @@ $dove-gray: #6f6f6f;
 // fonts  //
 ////////////
 $directory-fonts : '/dist/fonts/';
-$font1: 'OpenSans';
-$font2: 'OpenSans-Bold';
-$font3: 'OpenSans-Light';
-$font4: 'Roboto-Bold';
-$font5: 'Roboto-Regular';
-$font6: 'Roboto-Thin';
+$font-family-title: 'OpenSans';
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
 
 ///////////////////
 // Break points  //

@@ -1,7 +1,11 @@
-// breakmin: Défini un responsive min
-// $size: La taille à laquelle le responsive va s'éffectuer
-@mixin breakmin($size) {
-  @media all and (min-width: $size) {
-    @content;
+@mixin medium {
+  @media (min-width: $screen-sm-min) {
+    @content
+  }
+}
+
+@mixin large {
+  @media (min-width: $screen-md-min) {
+    @content
   }
 }
