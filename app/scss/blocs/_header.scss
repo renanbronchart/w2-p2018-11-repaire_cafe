@@ -1,5 +1,5 @@
 .header {
-  @include displayFlex();
+  display: flex;
   width: 292px;
   margin: auto;
   justify-content: space-between;
