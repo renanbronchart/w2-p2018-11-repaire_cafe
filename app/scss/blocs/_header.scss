@@ -1,0 +1,6 @@
+.header {
+  @include displayFlex();
+  width: 292px;
+  margin: auto;
+  justify-content: space-between;
+}
