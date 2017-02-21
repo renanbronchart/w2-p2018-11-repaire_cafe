@@ -11,9 +11,12 @@ $dove-gray: #6f6f6f;
 ////////////
 // fonts  //
 ////////////
-$directory-fonts : '/dist/fonts/';
+$directory-fonts : '/app/fonts/';
 $font-family-title: 'Open Sans', sans-serif;
 $font-family-base: 'Roboto', sans-serif;
+$font-family-icon: 'icomoon';
+
+$font-size-icon: 20px;
 
 ///////////////////
 // Break points  //
