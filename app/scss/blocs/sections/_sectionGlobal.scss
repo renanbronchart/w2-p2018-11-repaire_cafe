@@ -1,16 +1,28 @@
+.section {
+  padding: 20px 0;
+  &.section__container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
 .section__header {
-  margin: 0 0 0 13px;
+  margin: 0;
   text-align: center;
   font-family: $font-family-base;
   color: $chambray-blue;
 }
 
 .section__title {
-  @extend .h2;
+  @extend .h3;
   text-transform: uppercase;
 }
 
 .section__subtitle {
   @extend .p;
   margin: 2.4rem 0 0 0;
+}
+
+.section__body {
+  margin: 20px 0 0 0;
 }
