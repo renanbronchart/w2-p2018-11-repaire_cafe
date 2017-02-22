@@ -1,0 +1,25 @@
+.navSticky {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: white;
+}
+
+.navSticky__tab {
+  width: 20%;
+  text-align: center;
+}
+
+.navSticky__tabLink {
+  width: 100%;
+  padding: 5px 0;
+  display: inline-block;
+  .fa {
+    font-size: 30px;
+    line-height: 50px;
+    color: $victoria-purple;
+  }
+}
