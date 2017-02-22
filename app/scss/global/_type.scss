@@ -13,6 +13,7 @@
 
 .h2 {
   @include font-size(1.7rem);
+  font-size: 1.7rem;
 }
 
 .h3 {
@@ -25,6 +26,7 @@
 
 p, .p {
   @include font-size(0.9rem);
+  font-size: 0.9rem;
   font-family: $font-family-base;
   font-weight: normal;
 }
