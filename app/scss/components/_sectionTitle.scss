@@ -1,0 +1,16 @@
+.section__header {
+  margin: 0 0 0 13px;
+  text-align: center;
+  font-family: $font-family-base;
+  color: $chambray-blue;
+}
+
+.section__title {
+  @extend .h2;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  @extend .p;
+  margin: 2.4rem 0 0 0;
+}

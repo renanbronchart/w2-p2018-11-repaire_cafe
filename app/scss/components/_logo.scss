@@ -4,12 +4,14 @@
   font-family: $font-family-base;
   font-size: 12px;
   color: $chambray-blue;
-  &__img{
-    margin-right: 7px;
-  }
-  &__important{
-    margin: 35px auto;
-    display: block;
-    text-align: center;
-  }
+}
+
+.logo__img{
+  margin-right: 7px;
+}
+
+.logo__imgImportant{
+  margin: 35px auto;
+  display: block;
+  text-align: center;
 }
