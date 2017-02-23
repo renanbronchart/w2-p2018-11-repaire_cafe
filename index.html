@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W2 Mobile First Project</title>
   <script src="https://use.fontawesome.com/ac5fa99fca.js"></script>
-  <script src='dist/js/bundle.js'></script>
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -174,11 +173,16 @@
       <div class='section__navigationArc'>
         <div class="section__navigationIndicator">
           <p class="navigation__text">
+            <a href="#" class='navigation__button navigation__buttonPrev'>
+              <i class="fa fa-chevron-left"></i>
+            </a>
             <span class="navigation__CurrentSection">1</span>
             /
             <span class="navigation__allSections">5</span>
+            <a href="#" class='navigation__button navigation__buttonNext'>
+              <i class="fa fa-chevron-right"></i>
+            </a>
           </p>
-          <i class="fa fa-chevron-right"></i>
         </div>
       </div>
     </div>
@@ -211,5 +215,6 @@
       </a>
     </li>
   </ul>
+  <script src='dist/js/bundle.js'></script>
 </body>
 </html>

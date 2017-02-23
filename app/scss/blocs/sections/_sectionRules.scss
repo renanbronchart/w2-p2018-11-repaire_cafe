@@ -8,90 +8,12 @@
   }
 
   .section__header {
-    color: #ffffff
+    color: #ffffff;
   }
 
   .section__body {
     padding: 0 0 1.4rem 0;
-    overflow-y: auto;
+    overflow: hidden;
     white-space: nowrap;
-  }
-}
-
-
-.cardRules {
-  width: 60%;
-  padding: 20px;
-  margin: auto;
-  display: inline-block;
-  white-space: normal;
-  text-align: center;
-  background: #ffffff;
-  @include medium {
-    width: 30%;
-  }
-  &:first-child {
-    margin: 0 0 0 20%;
-    @include medium {
-      margin: 0 0 0 35%;
-    }
-  }
-
-  & + .cardRules {
-    margin: 0 0 0 20px;
-  }
-
-  &:last-child {
-    margin-right: 20%;
-    @include medium {
-      margin-right: 35%;
-    }
-  }
-}
-
-.cardRules__title {
-  @extend .h2;
-  color: $chambray-blue;
-  font-weight: 500;
-}
-
-.cardRules__picture {
-  padding: 1.8rem 0;
-  color: $cinnabar-orange;
-  .icon {
-    color: $victoria-purple;
-    font-size: 5rem;
-  }
-}
-
-.cardRules__description {
-  @extend .p;
-  text-align: left;
-}
-
-.section__navigation {
-  width: 100%;
-  height: 18vw;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
-  @include medium {
-    max-width: 768px;
-    max-height: 138px;
-    left: 50%;
-    margin: 0 0 0 -384px;
-  }
-}
-
-.section__navigationArc{
-  width: 100%;
-  height: 36vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #ffffff;
-  border-radius: 100%;
-  @include medium {
-    max-height: 276px;
   }
 }
