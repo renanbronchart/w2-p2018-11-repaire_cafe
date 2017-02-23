@@ -1,0 +1,19 @@
+.section__rules {
+  padding-bottom: 18vw;
+  background: url("http://placekitten.com/g/600/600") no-repeat center center;
+  background-size: cover;
+  z-index: 0;
+  @include medium {
+    padding-bottom: 138px;
+  }
+
+  .section__header {
+    color: #ffffff;
+  }
+
+  .section__body {
+    padding: 0 0 1.4rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

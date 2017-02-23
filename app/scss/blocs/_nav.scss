@@ -1,3 +1,5 @@
+////// navigation sticky //////
+///////////////////////////////
 .navSticky {
   width: 100%;
   position: fixed;
@@ -5,6 +7,7 @@
   left: 0;
   right: 0;
   display: flex;
+  border-top: 4px solid $cinnabar-orange;
   background-color: white;
 }
 
@@ -22,4 +25,71 @@
     line-height: 50px;
     color: $victoria-purple;
   }
+}
+
+////// navigation section //////
+///////////////////////////////
+.section__navigation {
+  width: 100%;
+  height: 18vw;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  @include medium {
+    max-width: 768px;
+    max-height: 138px;
+    left: 50%;
+    margin: 0 0 0 -384px;
+  }
+}
+
+.section__navigationArc {
+  width: 100%;
+  height: 36vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-radius: 100%;
+  @include medium {
+    max-height: 276px;
+  }
+}
+
+.section__navigationIndicator {
+  position: relative;
+  height: 50%;
+}
+
+.navigation__text {
+  width: 100%;
+  position: absolute;
+  bottom: 15%;
+  vertical-align: middle;
+  text-align: center;
+  color: $cinnabar-orange;
+}
+
+.navigation__CurrentSection {
+  @include font-size(2rem);
+}
+
+.navigation__button {
+  width: 2.75rem;
+  position: absolute;
+  top: 50%;
+  margin: -0.8rem 0 0 0;
+  display: inline-block;
+  .fa {
+    @include font-size(1.6rem);
+    color: $cinnabar-orange;
+  }
+}
+
+.navigation__buttonNext {
+  right: 25%;
+}
+
+.navigation__buttonPrev {
+  left: 25%;
 }
