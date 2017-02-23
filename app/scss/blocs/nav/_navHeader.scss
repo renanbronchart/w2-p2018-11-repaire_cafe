@@ -1,0 +1,26 @@
+.nav__header{
+  margin-top: 28px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .profil__indication{
+    text-align: center;
+  }
+  .identity{
+    margin-bottom: 10px;
+    font-family: $font-family-title;
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: $concrete-white;
+  }
+  .repairDone{
+    padding: 3px 7px;
+    font-size: 0.75rem;
+    background: $concrete-white;
+    font-family: $font-family-title;
+    font-weight: bold;
+    color: $chambray-blue;
+    text-align: center;
+  }
+}
