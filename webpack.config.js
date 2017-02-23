@@ -4,7 +4,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var extractSass = new ExtractTextPlugin({
     filename: "../css/[name].css",
-    disable: process.env.NODE_ENV === "development"
+    disable: process.env.NODE_ENV === "dev"
 });
 
 module.exports = {
