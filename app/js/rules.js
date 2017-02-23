@@ -2,6 +2,8 @@ var rulesSection = function() {
   var init = function() {
     $('.cardRules').setHeightBlock();
 
+    carousel();
+
     $(window).off('resize').on('resize', function () {
       $('.cardRules').setHeightBlock();
 
@@ -9,10 +11,10 @@ var rulesSection = function() {
         scrollLeft: 0
       }, 600);
 
-      carousel();
-    })
+      $('#navigation__CurrentSection').html('1');
 
-    carousel();
+      carousel();
+    });
   };
 
   var carousel = function() {
@@ -33,13 +35,15 @@ var rulesSection = function() {
           scrollLeft: (positionNextCard - offsetScroll)
         }, 800);
 
+        $('#navigation__CurrentSection').html(pos + 1);
       }
 
       return false;
-    })
+    });
 
     $('.navigation__button.navigation__buttonPrev').off('click').on('click', function() {
       if (pos > 0) {
+        $('.navigation__buttonPrev').addClass('navigation__buttonActive');
         offsetScroll = ($($cardRules[0]).offset()).left;
         pos -= 1;
         positionPrevCard = ($($cardRules[pos]).position()).left;
@@ -49,8 +53,10 @@ var rulesSection = function() {
         }, 800);
       }
 
+      $('#navigation__CurrentSection').html(pos + 1);
+
       return false;
-    })
+    });
   };
 
   return {init: init, carousel: carousel};
