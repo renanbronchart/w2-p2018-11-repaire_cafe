@@ -1,5 +1,11 @@
-var path = require('path');
 var webpack = require('webpack');
+var path = require('path');
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
+
+var extractSass = new ExtractTextPlugin({
+    filename: "../css/[name].css",
+    disable: process.env.NODE_ENV === "development"
+});
 
 module.exports = {
   entry: "./app/js/app.js",
@@ -8,26 +14,48 @@ module.exports = {
     publicPath: 'dist/js',
     filename: 'bundle.js'
   },
+  devtool: "source-map",
   module: {
     rules: [
       {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015']
+        }
+      },
+      {
         test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
+        loader: extractSass.extract({
+          loader: [{
+            loader: "css-loader",
+            options: {
+              sourceMap: true
+            }
+          },
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
               plugins: function() {
                 return [
-                  require('autoprefixer')
+                  require ('autoprefixer')
                 ];
               }
             }
           },
-          "sass-loader"
-        ]
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
+          }],
+          // use style-loader in development
+          fallbackLoader: "style-loader"
+        })
       },
     ]
-  }
+  },
+  plugins: [
+    extractSass
+  ]
 }
