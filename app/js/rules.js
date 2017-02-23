@@ -2,25 +2,32 @@ var rulesSection = function() {
   var init = function() {
     $('.cardRules').setHeightBlock();
 
+    $(window).off('resize').on('resize', function () {
+      $('.cardRules').setHeightBlock();
+
+      $('.section__rules .section__body').animate({
+        scrollLeft: 0
+      }, 600);
+
+      carousel();
+    })
+
     carousel();
   };
 
   var carousel = function() {
     var pos = 0;
     var $cardRules = $('.cardRules');
-    var cardLength = $('.cardRules').length;
+    var cardLength = $cardRules.length;
+    var offsetScroll;
+    var positionPrevCard;
+    var positionNextCard;
 
-    console.log(cardLength);
-
-    $('.navigation__button.navigation__buttonNext').on('click', function() {
-      console.log(cardLength);
-      console.log(pos);
+    $('.navigation__button.navigation__buttonNext').off('click').on('click', function() {
       if (cardLength > (pos + 1)) {
-        var positionNextCard;
-        var offsetScroll = ($($('.cardRules')[0]).offset()).left;
-
+        offsetScroll = ($($cardRules[0]).offset()).left;
         pos += 1;
-        positionNextCard = ($($('.cardRules')[pos]).position()).left;
+        positionNextCard = ($($cardRules[pos]).position()).left;
 
         $('.section__rules .section__body').animate({
           scrollLeft: (positionNextCard - offsetScroll)
@@ -31,19 +38,11 @@ var rulesSection = function() {
       return false;
     })
 
-    $('.navigation__button.navigation__buttonPrev').on('click', function() {
+    $('.navigation__button.navigation__buttonPrev').off('click').on('click', function() {
       if (pos > 0) {
-        var positionPrevCard;
-        var offsetScroll = ($($('.cardRules')[0]).offset()).left;
-
-
+        offsetScroll = ($($cardRules[0]).offset()).left;
         pos -= 1;
-        positionPrevCard = ($($('.cardRules')[pos]).position()).left;
-        console.log(positionPrevCard);
-        console.log(offsetScroll);
-        console.log(positionPrevCard - offsetScroll);
-
-
+        positionPrevCard = ($($cardRules[pos]).position()).left;
 
         $('.section__rules .section__body').animate({
           scrollLeft: (positionPrevCard - offsetScroll)
