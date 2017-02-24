@@ -1,14 +1,39 @@
 //// Card-rules /////
 ////////////////////
-.cardRules {
-  width: 60%;
-  padding: 20px;
+.cardGlobal {
+  width: 80%;
+  padding: 1.25rem;
   margin: auto;
   vertical-align: top;
-  display: inline-block;
   white-space: normal;
-  text-align: center;
   background: #ffffff;
+}
+
+.cardGlobal__header {
+
+}
+
+.cardGlobal__title {
+  @extend .h2;
+}
+
+.cardGlobal__subtitle {
+  @extend .h5;
+}
+
+.cardGlobal__content {
+  margin: 2.8rem 0 0 0;
+}
+
+.cardGlobal__footer {
+  padding: 0.8rem 0;
+}
+
+.cardRules {
+  @extend .cardGlobal;
+  width: 60%;
+  text-align: center;
+  display: inline-block;
   @include medium {
     width: 30%;
   }

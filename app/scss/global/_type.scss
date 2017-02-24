@@ -23,6 +23,10 @@
   @include font-size(1.2rem);
 }
 
+.h5 {
+  @include font-size(0.7rem);
+}
+
 p, .p {
   @include font-size(0.9rem);
   font-family: $font-family-base;
