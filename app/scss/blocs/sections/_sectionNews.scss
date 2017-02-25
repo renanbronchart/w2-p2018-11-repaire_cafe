@@ -1,4 +1,9 @@
-.section__guestBook {
+.section__news {
+  background: $chambray-blue;
+  .section__title {
+    color: #ffffff;
+  }
+
   .slider__avatar {
     @include avatar(5rem, 0, 0);
   }
@@ -12,9 +17,6 @@
   }
 
   .slider__content {
-    padding: 12rem 0;
-    background: url("http://placekitten.com/1000/1000?image=9") no-repeat center center;
-    background-size: cover;
   }
 
   .card__content {
