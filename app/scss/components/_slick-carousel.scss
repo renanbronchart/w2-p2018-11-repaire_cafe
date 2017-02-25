@@ -4,6 +4,7 @@
 }
 
 .slider__header {
+  margin: 0 0 1.25rem 0;
   .slider__element {
     text-align: center;
   }
@@ -26,4 +27,8 @@
 
 .slider__container.slick-current {
   opacity: 1;
+}
+
+.slick-slide:focus {
+  outline: none;
 }

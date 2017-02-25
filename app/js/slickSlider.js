@@ -9,6 +9,7 @@ var slickSlider = function() {
       slidesToScroll: 1,
       arrows: false,
       centerMode: true,
+      focusOnSelect: false,
       asNavFor: '.slider__content',
       swipeToSlide: true,
       responsive: [
@@ -32,9 +33,10 @@ var slickSlider = function() {
       slidesToScroll: 1,
       asNavFor: '.slider__header',
       swipeToSlide: true,
-      dots: true,
+      dots: false,
+      arrows: false,
       centerMode: true,
-      focusOnSelect: true,
+      focusOnSelect: false,
       responsive: [
         {
           breakpoint: 1024,
