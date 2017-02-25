@@ -1,9 +1,29 @@
-.slider-nav,
-.slider-for {
+.slider__header,
+.slider__content {
   overflow: hidden;
 }
 
-.slick__element, .slick__header {
+.slider__header {
+  .slider__element {
+    text-align: center;
+  }
+}
+
+.slider__content {
+  .slider__element {
+    width: 95%;
+    margin: auto;
+    @include large {
+      width: 80%;
+    }
+  }
+}
+
+.slider__container {
   display: inline-block;
-  text-align: center;
+  opacity: 0.3;
+}
+
+.slider__container.slick-current {
+  opacity: 1;
 }

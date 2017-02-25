@@ -1,3 +1,11 @@
 .guestBook__avatar {
   @include avatar(2.5rem, 0, 0);
 }
+
+.guestBook__avatarName {
+  opacity: 0;
+}
+
+.slick-current .guestBook__avatarName {
+  opacity: 1;
+}

@@ -1,32 +1,45 @@
 //// Card-rules /////
 ////////////////////
 .cardGlobal {
-  width: 80%;
-  padding: 1.25rem;
-  margin: auto;
+  padding: 0 1.25rem;
   vertical-align: top;
   white-space: normal;
   background: #ffffff;
 }
 
 .cardGlobal__header {
-
+  padding: 1.8rem 0 0 0;
 }
 
 .cardGlobal__title {
   @extend .h2;
+  color: $chambray-blue;
+  font-weight: normal;
 }
 
 .cardGlobal__subtitle {
   @extend .h5;
+  color: $cinnabar-orange;
+  font-weight: normal;
 }
 
 .cardGlobal__content {
-  margin: 2.8rem 0 0 0;
+  margin: 1.8rem 0 0 0;
+  max-height: 4.5rem;
+  overflow: hidden;
 }
 
 .cardGlobal__footer {
-  padding: 0.8rem 0;
+  text-align: center;
+}
+
+.cardGlobal__link {
+  padding: 12px;
+  display: inline-block;
+  .fa {
+    font-size: 1.8rem;
+    color: $cinnabar-orange;
+  }
 }
 
 .cardRules {
