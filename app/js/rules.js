@@ -1,11 +1,13 @@
 var rulesSection = function() {
   var init = function() {
-    $('.cardRules').setHeightBlock();
+    var $cardRules = $('.section__rules .card');
+
+    $cardRules.setHeightBlock();
 
     carousel();
 
-    $(window).off('resize').on('resize', function () {
-      $('.cardRules').setHeightBlock();
+    $(window).on('resize', function () {
+      $cardRules.setHeightBlock();
 
       $('.section__rules .section__body').animate({
         scrollLeft: 0
@@ -19,7 +21,7 @@ var rulesSection = function() {
 
   var carousel = function() {
     var pos = 0;
-    var $cardRules = $('.cardRules');
+    var $cardRules = $('.section__rules .card');
     var cardLength = $cardRules.length;
     var offsetScroll;
     var positionPrevCard;

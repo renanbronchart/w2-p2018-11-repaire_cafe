@@ -1,82 +1,33 @@
-//// CardGlobal /////
+//// card /////
 /////////////////////
-.cardGlobal {
+.card {
   padding: 0 1.25rem;
   vertical-align: top;
   white-space: normal;
   background: #ffffff;
 }
 
-.cardGlobal__header {
+.card__header {
   padding: 1.8rem 0 0 0;
 }
 
-.cardGlobal__title {
+.card__title {
   @extend .h2;
   color: $chambray-blue;
   font-weight: normal;
 }
 
-.cardGlobal__subtitle {
+.card__subtitle {
   @extend .h5;
   color: $cinnabar-orange;
   font-weight: normal;
 }
 
-.cardGlobal__content {
-  margin: 1.8rem 0 0 0;
-  max-height: 8rem;
-  overflow: hidden;
+.card__content {
+  margin: 1.8rem 0;
 }
 
-.cardGlobal__footer {
-  text-align: center;
-}
-
-.cardGlobal__link {
-  padding: 12px;
-  display: inline-block;
-  .fa {
-    font-size: 1.8rem;
-    color: $cinnabar-orange;
-  }
-}
-
-//// CardRules /////
-////////////////////
-.cardRules {
-  @extend .cardGlobal;
-  width: 60%;
-  text-align: center;
-  display: inline-block;
-  @include medium {
-    width: 30%;
-  }
-  &:first-child {
-    margin: 0 0 0 20%;
-    @include medium {
-      margin: 0 0 0 35%;
-    }
-  }
-
-  & + .cardRules {
-    margin: 0 0 0 20px;
-
-  }
-
-  &:last-child {
-    margin-right: 20%;
-    @include medium {
-      margin-right: 35%;
-    }
-  }
-}
-
-.cardRules__title {
-  @extend .cardGlobal__title;
-}
-
-.cardRules__picture {
+.card__picture {
   padding: 1.8rem 0;
   color: $cinnabar-orange;
   .icon {
@@ -85,7 +36,15 @@
   }
 }
 
-.cardRules__description {
-  @extend .p;
-  text-align: left;
+.card__footer {
+  text-align: center;
+}
+
+.card__link {
+  padding: 16px;
+  display: inline-block;
+  .fa {
+    font-size: 1.8rem;
+    color: $cinnabar-orange;
+  }
 }

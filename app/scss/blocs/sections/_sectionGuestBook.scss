@@ -16,4 +16,9 @@
     background: url("http://placekitten.com/1000/1000?image=9") no-repeat center center;
     background-size: cover;
   }
+
+  .card__content {
+    max-height: 8rem;
+    overflow: hidden;
+  }
 }

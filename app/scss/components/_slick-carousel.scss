@@ -23,10 +23,15 @@
 .slider__container {
   display: inline-block;
   opacity: 0.3;
-}
-
-.slider__container.slick-current {
-  opacity: 1;
+  &:hover {
+    cursor: grab;
+  }
+  &:active {
+    cursor: grabbing;
+  }
+  &.slick-current {
+    opacity: 1;
+  }
 }
 
 .slick-slide:focus {

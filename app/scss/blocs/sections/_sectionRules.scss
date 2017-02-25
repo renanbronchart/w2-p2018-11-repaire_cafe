@@ -16,4 +16,45 @@
     overflow: hidden;
     white-space: nowrap;
   }
+
+  .card {
+    @extend .card;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    @include medium {
+      width: 60%;
+    }
+    @include large {
+      width: 30%;
+    }
+    &:first-child {
+      margin: 0 5%;
+      @include medium {
+        margin: 0 5% 0 20%;
+      }
+      @include large {
+        margin: 0 10% 0 35%;
+      }
+    }
+
+    & + .card {
+      margin: 0 5% 0 0;
+      @include large {
+        margin: 0 10% 0 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 20%;
+      @include large {
+        margin-right: 35%;
+      }
+    }
+  }
+
+  .card__description {
+    @extend .p;
+    text-align: left;
+  }
 }
