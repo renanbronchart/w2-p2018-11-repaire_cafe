@@ -1,7 +1,16 @@
 .section__news {
+  padding-bottom: 18vw;
   background: $chambray-blue;
+  z-index: 0;
+  @include medium {
+    padding-bottom: 138px;
+  }
   .section__title {
     color: #ffffff;
+  }
+
+  .section__body {
+    padding: 0 0 2.8rem 0;
   }
 
   .slider__avatar {
