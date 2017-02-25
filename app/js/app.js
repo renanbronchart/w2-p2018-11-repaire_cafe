@@ -7,8 +7,10 @@ global.slick = require('slick-carousel');
 // Call file js
 $(document).ready(function () {
   require('./pluginJQuery.js');
+  require('./slickSlider.js');
 
+  require('./disabledButtons.js');
 
   require('./rules.js');
-  require('./slickSlider.js');
+  require('./buttonNavigation.js');
 })
