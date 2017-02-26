@@ -2,14 +2,29 @@ var rulesSection = function() {
   var buttonNavigation = require('./buttonNavigation.js').buttonNavigation;
   var $navigationButtonNext = $('.section__rules .navigation__buttonNext');
   var $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
+  var $cardRules = $('.section__rules .card');
+  var cardLength = $cardRules.length;
+  var offsetScroll;
+  var positionPrevCard;
+  var positionNextCard;
+  var idSetTimeout;
 
   var init = function() {
     var $cardRules = $('.section__rules .card');
 
-    $cardRules.setHeightBlock();
-    carousel();
+    if ($(window).width() < 1280) {
+      $cardRules.setHeightBlock();
+      carousel();
+    }
 
     $(window).on('resize', function () {
+      clearTimeout(idSetTimeout);
+      idSetTimeout = setTimeout(onFinishResize, 500);
+    });
+  };
+
+  var onFinishResize = function() {
+    if ($(this).width() < 1280 ) {
       $cardRules.setHeightBlock();
 
       $('.section__rules .section__body').animate({
@@ -21,16 +36,13 @@ var rulesSection = function() {
       buttonNavigation.removeClassActive($navigationButtonPrev);
 
       carousel();
-    });
+    } else {
+      $cardRules.css('height', 'auto');
+    }
   };
 
   var carousel = function() {
     var pos = 0;
-    var $cardRules = $('.section__rules .card');
-    var cardLength = $cardRules.length;
-    var offsetScroll;
-    var positionPrevCard;
-    var positionNextCard;
 
     $('.navigation__button.navigation__buttonNext').off('click').on('click', function() {
       if (cardLength > (pos + 1)) {
