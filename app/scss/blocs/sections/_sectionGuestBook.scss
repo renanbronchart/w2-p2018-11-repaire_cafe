@@ -1,0 +1,28 @@
+.section__guestBook {
+  .slider__avatar {
+    @include avatar(5rem, 0, 0);
+  }
+
+  .slider__avatarName {
+    opacity: 0;
+  }
+
+  .slick-current .slider__avatarName {
+    opacity: 1;
+  }
+
+
+  .slider__content {
+    background: url("http://placekitten.com/1000/1000?image=9") no-repeat center center;
+    background-size: cover;
+    .slider__container {
+      padding: 12rem 0;
+    }
+  }
+
+  .card__content {
+    max-height: 5rem;
+    margin: 1.8rem 0 0 0;
+    overflow: hidden;
+  }
+}

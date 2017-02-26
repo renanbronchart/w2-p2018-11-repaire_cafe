@@ -1,32 +1,3 @@
-////// navigation sticky //////
-///////////////////////////////
-.navSticky {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  border-top: 4px solid $cinnabar-orange;
-  background-color: white;
-}
-
-.navSticky__tab {
-  width: 20%;
-  text-align: center;
-}
-
-.navSticky__tabLink {
-  width: 100%;
-  padding: 5px 0;
-  display: inline-block;
-  .fa {
-    font-size: 30px;
-    line-height: 50px;
-    color: $victoria-purple;
-  }
-}
-
 ////// navigation section //////
 ///////////////////////////////
 .section__navigation {
@@ -57,16 +28,15 @@
 }
 
 .section__navigationIndicator {
-  position: relative;
   height: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .navigation__text {
   width: 100%;
-  position: absolute;
-  bottom: 15%;
-  vertical-align: middle;
-  text-align: center;
   color: $cinnabar-orange;
 }
 
@@ -75,21 +45,25 @@
 }
 
 .navigation__button {
-  width: 2.75rem;
-  position: absolute;
-  top: 50%;
-  margin: -0.8rem 0 0 0;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 5%;
+  text-decoration: none;
+  color: $chambray-blue;
+  cursor: not-allowed;
   display: inline-block;
+  opacity: 0.5;
   .fa {
     @include font-size(1.6rem);
+  }
+
+  &--active {
+    cursor: pointer;
     color: $cinnabar-orange;
+    opacity: 1;
   }
 }
 
-.navigation__buttonNext {
-  right: 25%;
-}
-
-.navigation__buttonPrev {
-  left: 25%;
+.navigation__buttonNext, .navigation__buttonPrev {
+  color: $cinnabar-orange;
 }

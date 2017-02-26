@@ -1,17 +1,24 @@
 var rulesSection = function() {
-  var init = function() {
-    $('.cardRules').setHeightBlock();
+  var buttonNavigation = require('./buttonNavigation.js').buttonNavigation;
+  var $navigationButtonNext = $('.section__rules .navigation__buttonNext');
+  var $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
 
+  var init = function() {
+    var $cardRules = $('.section__rules .card');
+
+    $cardRules.setHeightBlock();
     carousel();
 
-    $(window).off('resize').on('resize', function () {
-      $('.cardRules').setHeightBlock();
+    $(window).on('resize', function () {
+      $cardRules.setHeightBlock();
 
       $('.section__rules .section__body').animate({
         scrollLeft: 0
       }, 600);
 
       $('#navigation__CurrentSection').html('1');
+      buttonNavigation.addClassActive($navigationButtonPrev);
+      buttonNavigation.removeClassActive($navigationButtonPrev);
 
       carousel();
     });
@@ -19,7 +26,7 @@ var rulesSection = function() {
 
   var carousel = function() {
     var pos = 0;
-    var $cardRules = $('.cardRules');
+    var $cardRules = $('.section__rules .card');
     var cardLength = $cardRules.length;
     var offsetScroll;
     var positionPrevCard;
@@ -36,6 +43,11 @@ var rulesSection = function() {
         }, 800);
 
         $('#navigation__CurrentSection').html(pos + 1);
+        buttonNavigation.addClassActive($navigationButtonPrev);
+
+        if (pos == ($cardRules.length - 1)) {
+          buttonNavigation.removeClassActive($navigationButtonNext);
+        }
       }
 
       return false;
@@ -51,6 +63,11 @@ var rulesSection = function() {
         $('.section__rules .section__body').animate({
           scrollLeft: (positionPrevCard - offsetScroll)
         }, 800);
+
+        buttonNavigation.addClassActive($navigationButtonNext);
+        if (pos == 0) {
+          buttonNavigation.removeClassActive($navigationButtonPrev);
+        }
       }
 
       $('#navigation__CurrentSection').html(pos + 1);

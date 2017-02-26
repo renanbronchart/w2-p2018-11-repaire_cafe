@@ -1,44 +1,37 @@
-//// Card-rules /////
-////////////////////
-.cardRules {
-  width: 60%;
-  padding: 20px;
-  margin: auto;
+//// card /////
+/////////////////////
+.card {
+  padding: 0 1.25rem;
   vertical-align: top;
-  display: inline-block;
   white-space: normal;
-  text-align: center;
   background: #ffffff;
-  @include medium {
-    width: 30%;
-  }
-  &:first-child {
-    margin: 0 0 0 20%;
-    @include medium {
-      margin: 0 0 0 35%;
-    }
-  }
-
-  & + .cardRules {
-    margin: 0 0 0 20px;
-
-  }
-
-  &:last-child {
-    margin-right: 20%;
-    @include medium {
-      margin-right: 35%;
-    }
-  }
 }
 
-.cardRules__title {
+.card__header {
+  padding: 1.8rem 0 0 0;
+}
+
+.card__title {
   @extend .h2;
   color: $chambray-blue;
-  font-weight: 500;
+  font-weight: normal;
+
+  & + .card__subtitle {
+    margin: 1rem 0 0 0;
+  }
 }
 
-.cardRules__picture {
+.card__subtitle {
+  @extend .h5;
+  color: $cinnabar-orange;
+  font-weight: normal;
+}
+
+.card__content {
+  margin: 1.8rem 0;
+}
+
+.card__picture {
   padding: 1.8rem 0;
   color: $cinnabar-orange;
   .icon {
@@ -47,7 +40,15 @@
   }
 }
 
-.cardRules__description {
-  @extend .p;
-  text-align: left;
+.card__footer {
+  text-align: center;
+}
+
+.card__openModal {
+  padding: 16px;
+  display: inline-block;
+  .fa {
+    font-size: 1.8rem;
+    color: $cinnabar-orange;
+  }
 }

@@ -1,0 +1,39 @@
+.slider__header,
+.slider__content {
+  overflow: hidden;
+}
+
+.slider__header {
+  margin: 0 0 2.5rem 0;
+  .slider__element {
+    text-align: center;
+  }
+}
+
+.slider__content {
+  .slider__element {
+    width: 95%;
+    margin: auto;
+    @include large {
+      width: 80%;
+    }
+  }
+}
+
+.slider__container {
+  display: inline-block;
+  opacity: 0.3;
+  &:hover {
+    cursor: grab;
+  }
+  &:active {
+    cursor: grabbing;
+  }
+  &.slick-current {
+    opacity: 1;
+  }
+}
+
+.slick-slide:focus {
+  outline: none;
+}
