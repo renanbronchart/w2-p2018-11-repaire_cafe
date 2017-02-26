@@ -3,34 +3,41 @@ var rulesSection = function() {
   var $navigationButtonNext = $('.section__rules .navigation__buttonNext');
   var $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
 
+  var $cardRules = $('.section__rules .card');
+  var cardLength = $cardRules.length;
+  var offsetScroll;
+  var positionPrevCard;
+  var positionNextCard;
+
   var init = function() {
     var $cardRules = $('.section__rules .card');
 
-    $cardRules.setHeightBlock();
-    carousel();
+    if ($(window).width() < 1280) {
+      $cardRules.setHeightBlock();
+      carousel();
+    }
 
     $(window).on('resize', function () {
-      $cardRules.setHeightBlock();
+      if ($(this).width() < 1280 ) {
+        $cardRules.setHeightBlock();
 
-      $('.section__rules .section__body').animate({
-        scrollLeft: 0
-      }, 600);
+        $('.section__rules .section__body').animate({
+          scrollLeft: 0
+        }, 600);
 
-      $('#navigation__CurrentSection').html('1');
-      buttonNavigation.addClassActive($navigationButtonPrev);
-      buttonNavigation.removeClassActive($navigationButtonPrev);
+        $('#navigation__CurrentSection').html('1');
+        buttonNavigation.addClassActive($navigationButtonPrev);
+        buttonNavigation.removeClassActive($navigationButtonPrev);
 
-      carousel();
+        carousel();
+      } else {
+        $cardRules.css('height', 'auto');
+      }
     });
   };
 
   var carousel = function() {
     var pos = 0;
-    var $cardRules = $('.section__rules .card');
-    var cardLength = $cardRules.length;
-    var offsetScroll;
-    var positionPrevCard;
-    var positionNextCard;
 
     $('.navigation__button.navigation__buttonNext').off('click').on('click', function() {
       if (cardLength > (pos + 1)) {
@@ -40,7 +47,9 @@ var rulesSection = function() {
 
         $('.section__rules .section__body').animate({
           scrollLeft: (positionNextCard - offsetScroll)
-        }, 800);
+        }, 800, function() {
+
+        });
 
         $('#navigation__CurrentSection').html(pos + 1);
         buttonNavigation.addClassActive($navigationButtonPrev);
