@@ -12,4 +12,5 @@ $(document).ready(function () {
 
   require('./rules.js');
   require('./buttonNavigation.js');
+  require('./modal.js');
 })

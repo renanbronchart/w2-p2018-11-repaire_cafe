@@ -48,7 +48,6 @@ var buttonNavigation = function() {
   return {init: init, addClassActive: addClassActive, removeClassActive: removeClassActive};
 }();
 
-
 buttonNavigation.init();
 
 module.exports = {
