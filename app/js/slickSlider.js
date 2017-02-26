@@ -1,9 +1,11 @@
 var slickSlider = function() {
+  var slick = require('slick-carousel').slick;
+
   var init = function() {
-    initSliderNews();
+    initSliders();
   };
 
-  var initSliderNews = function() {
+  var initSliders = function() {
     $('.section__slider').each(function() {
       var $this = $(this);
       var $sliderHeader = $this.find('.slider__header');
