@@ -4,4 +4,8 @@
   margin-top: 11px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  @include medium(){
+    width: 95%;
+  }
 }
