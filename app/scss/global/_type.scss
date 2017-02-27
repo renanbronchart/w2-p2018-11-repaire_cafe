@@ -59,6 +59,7 @@
 
 p, .p {
   @include font-size(0.9rem);
+  font-size: 0.9rem;
   font-family: $font-family-base;
   font-weight: normal;
   @include medium {

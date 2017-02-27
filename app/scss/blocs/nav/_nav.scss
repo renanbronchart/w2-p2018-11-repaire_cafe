@@ -1,0 +1,15 @@
+.nav{
+  width: 260px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -260px;
+  z-index: 2;
+  background: $chambray-blue;
+  overflow: scroll;
+  transition: 0.5s;
+  &.active{
+    right: 0;
+    transition: 0.5s;
+  }
+}

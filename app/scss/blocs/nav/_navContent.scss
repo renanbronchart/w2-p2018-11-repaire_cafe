@@ -1,0 +1,31 @@
+.nav__content{
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  .nav__button{
+    width: 100%;
+    padding-bottom: 10px;
+    display: block;
+    font-family: $font-family-title;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  .nav__lists{
+    margin-left: 25px;
+    padding-top: 16.5px;
+    display: none;
+  }
+  .nav__items{
+    margin-bottom: 16.5px;
+  }
+  .nav__link{
+    font-family: $font-family-title;
+    color: #ffffff;
+    font-size: 0.6875rem;
+    text-decoration: none;
+  }
+}
