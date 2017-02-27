@@ -1,11 +1,11 @@
 .section__aboutUs {
-  .section__title {
-    text-transform: none;
-  }
-
   .paragraph {
     color: $chambray-blue;
-    margin-bottom: 12px;
     font-family: $font-family-base;
+  }
+
+  .section__logo {
+    width: 7rem;
+    margin: 2.4rem auto 0 auto;
   }
 }
