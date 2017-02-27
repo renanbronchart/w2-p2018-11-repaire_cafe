@@ -9,6 +9,12 @@
   display: flex;
   border-top: 4px solid $cinnabar-orange;
   background-color: white;
+  @include medium {
+    padding: 0 10%;
+  }
+  @include large {
+    padding: 0 20%;
+  }
 }
 
 .navSticky__tab {
@@ -23,6 +29,6 @@
   .fa {
     font-size: 30px;
     line-height: 50px;
-    color: $victoria-purple;
+    color: black;
   }
 }
