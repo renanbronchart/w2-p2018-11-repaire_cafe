@@ -1,7 +1,6 @@
 .section__rules {
+  @include background-image('home/atelier-adelin.jpg');
   padding-bottom: 18vw;
-  background: url("http://placekitten.com/g/600/600") no-repeat center center;
-  background-size: cover;
   z-index: 0;
   @include medium {
     padding-bottom: 138px;
