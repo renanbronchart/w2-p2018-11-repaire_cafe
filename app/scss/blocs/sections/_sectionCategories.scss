@@ -4,6 +4,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @include medium {
+      padding: 0 10%;
+    }
+    @include large {
+      padding: 0 20%;
+    }
   }
 
   .group__category {
@@ -13,11 +19,22 @@
     flex-shrink: 1;
     text-align: center;
     background-color: $chambray-blue;
+    @include medium {
+      padding: 3.25rem 0 1.8rem 0;
+    }
+
   }
 
   .group__categoryDescription {
     color: white;
     margin: 1.2rem 0 0 0;
+  }
+
+  .group__categoryContent .icon{
+    font-size: 2.5rem;
+    @include medium {
+      font-size: 3.5rem;
+    }
   }
 }
 
