@@ -2,6 +2,10 @@
   .paragraph {
     color: $chambray-blue;
     font-family: $font-family-base;
+    @include large {
+      width: 855px;
+      margin: 0 auto 25px auto;
+    }
   }
 
   .section__logo {
