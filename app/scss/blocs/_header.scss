@@ -1,9 +1,10 @@
 .header {
-  width: 292px;
+  width: 95%;
   margin: auto;
   margin-top: 11px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   @include medium {
     width: 95%;

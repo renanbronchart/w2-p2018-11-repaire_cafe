@@ -1,4 +1,4 @@
-.nav {
+.navAside {
   width: 260px;
   height: 100%;
   position: fixed;
@@ -14,7 +14,7 @@
   }
 }
 
-.nav__header {
+.navAside__header {
   margin-top: 50px;
   padding: 0 13px;
   display: flex;
@@ -41,10 +41,10 @@
   }
 }
 
-.nav__content {
+.navAside__content {
   width: 90%;
   margin: 25px auto 0 auto;
-  .nav__button{
+  .navAside__button{
     width: 100%;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -56,15 +56,15 @@
     font-size: 0.875rem;
     font-weight: bold;
   }
-  .nav__lists {
+  .navAside__lists {
     margin-left: 25px;
     padding-top: 16.5px;
     display: none;
   }
-  .nav__item {
+  .navAside__item {
     margin-bottom: 16.5px;
   }
-  .nav__link {
+  .navAside__link {
     font-family: $font-family-title;
     color: #ffffff;
     font-size: 0.6875rem;

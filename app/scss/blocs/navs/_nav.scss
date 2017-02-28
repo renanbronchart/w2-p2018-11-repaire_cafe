@@ -1,0 +1,30 @@
+.nav{
+  width: 70%;
+  display: none;
+  @include medium {
+    display: block;
+  }
+  .nav__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav__item {
+
+  }
+  .nav__link {
+    font-family: $font-family-base;
+    color: $chambray-blue;
+    font-weight: bold;
+  }
+
+  .connexionButton {
+    font-family: $font-family-base;
+    color: $concrete-white;
+    font-weight: bold;
+    background: $chambray-blue;
+    width: 112px;
+    height: 30px;
+  }
+}

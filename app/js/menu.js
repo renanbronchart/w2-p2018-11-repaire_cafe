@@ -1,14 +1,14 @@
 var menu = function () {
   var init = function () {
     $('.burger').click(function () {
-      $('.nav').toggleClass('active');
+      $('.navAside').toggleClass('active');
       $(this).toggleClass('open');
     });
     toggleNavList();
   };
   var toggleNavList = function () {
-    $('.nav__button').click(function (e) {
-      $(this).next('.nav__lists').toggle();
+    $('.navAside__button').click(function (e) {
+      $(this).next('.navAside__lists').toggle();
       return false;
     })
   };
