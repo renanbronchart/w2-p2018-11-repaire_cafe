@@ -5,17 +5,22 @@ global.$ = require('jquery');
 
 // Call file js
 $(document).ready(function () {
-  // require('./pluginJQuery.js');
-  // require('./disabledButtons.js');
-  // require('./rules.js');
-  // require('./buttonNavigation.js');
-  // require('./menu.js');
+  setTimeout(function() {
+    $('.body__container').addClass('body__container--active');
 
-  // setTimeout(function() {
-  //   require('./slickSlider.js');
-  //   require('./modal.js');
+    require('./pluginJQuery.js');
+    require('./slickSlider.js');
 
-  //   $('.body__loading').fadeOut().removeClass('body__loading--active');
+    require('./disabledButtons.js');
 
-  // }, 2000);
+    require('./rules.js');
+    require('./buttonNavigation.js');
+    require('./modal.js');
+    require('./menu.js');
+  }, 500);
+
+  setTimeout(function () {
+    $('.body__loading').addClass('body__loading--animation');
+    $('body').removeClass('noScroll');
+  }, 2000);
 })

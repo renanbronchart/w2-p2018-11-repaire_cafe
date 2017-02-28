@@ -6,7 +6,7 @@ body {
   }
 }
 
-.body__container, .body__loading {
+.body__container {
   display: none;
   &--active {
     display: block;

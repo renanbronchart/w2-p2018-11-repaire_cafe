@@ -29,6 +29,11 @@
   }
 }
 
+.body__loading--animation {
+  animation: displayFade 0.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
 .icon_repaire {
   animation: rotateGears 4s infinite linear;
   animation-fill-mode: forwards;
@@ -52,14 +57,12 @@
     position: absolute;
     top: 20%;
     left: 8%;
-
   }
   &:nth-child(3) {
     font-size: 1.3rem;
     position: absolute;
     top: 10%;
     left: 30%;
-
   }
   &:nth-child(4) {
     animation: rotateGears 3.5s infinite linear;
@@ -67,7 +70,6 @@
     position: absolute;
     top: 30%;
     left: 5%;
-
   }
   &:nth-child(5) {
     animation: rotateGears 5s infinite ease-in-out;
@@ -110,8 +112,8 @@
     animation: rotateGears 6s infinite ease-in-out;
     font-size: 1.4rem;
     position: absolute;
-    top: 6%;
-    left: 6%;
+    top: 8%;
+    left: 8%;
 
   }
 }
