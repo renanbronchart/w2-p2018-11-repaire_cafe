@@ -1,4 +1,4 @@
-.nav{
+.nav {
   width: 260px;
   height: 100%;
   position: fixed;
@@ -14,7 +14,7 @@
   }
 }
 
-.nav__header{
+.nav__header {
   margin-top: 50px;
   padding: 0 13px;
   display: flex;
@@ -23,14 +23,14 @@
   .profil__indication{
     text-align: center;
   }
-  .identity{
+  .identity {
     margin-bottom: 10px;
     font-family: $font-family-title;
     font-weight: bold;
     font-size: 0.875rem;
     color: $concrete-white;
   }
-  .repairDone{
+  .repairDone {
     padding: 3px 7px;
     font-size: 0.75rem;
     background: $concrete-white;
@@ -41,7 +41,7 @@
   }
 }
 
-.nav__content{
+.nav__content {
   width: 90%;
   margin: 25px auto 0 auto;
   .nav__button{
@@ -56,15 +56,15 @@
     font-size: 0.875rem;
     font-weight: bold;
   }
-  .nav__lists{
+  .nav__lists {
     margin-left: 25px;
     padding-top: 16.5px;
     display: none;
   }
-  .nav__item{
+  .nav__item {
     margin-bottom: 16.5px;
   }
-  .nav__link{
+  .nav__link {
     font-family: $font-family-title;
     color: #ffffff;
     font-size: 0.6875rem;
