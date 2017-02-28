@@ -7,7 +7,6 @@
   right: 0;
   background: $chambray-blue;
   z-index: 100;
-
 }
 
 .body__loadingLogo {
@@ -38,82 +37,55 @@
   animation: rotateGears 4s infinite linear;
   animation-fill-mode: forwards;
   &::nth-child(0) {
+    @include absolutePosition(0, 0);
     animation-duration: 2s;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
-
   &::nth-child(1) {
+    @include absolutePosition(5%, 5%);
     font-size: 1rem;
-    position: absolute;
-    top: 5%;
-    left: 5%;
   }
   &:nth-child(2) {
+    @include absolutePosition(20%, 8%);
     animation: rotateGears 10s infinite linear;
     animation-fill-mode: reverse;
     font-size: 2rem;
-    position: absolute;
-    top: 20%;
-    left: 8%;
   }
   &:nth-child(3) {
+    @include absolutePosition(10%, 30%);
     font-size: 1.3rem;
-    position: absolute;
-    top: 10%;
-    left: 30%;
   }
   &:nth-child(4) {
+    @include absolutePosition(30%, 5%);
     animation: rotateGears 3.5s infinite linear;
     font-size: 3rem;
-    position: absolute;
-    top: 30%;
-    left: 5%;
   }
   &:nth-child(5) {
+    @include absolutePosition(70%, 70%);
     animation: rotateGears 5s infinite ease-in-out;
     font-size: 6rem;
-    position: absolute;
-    top: 70%;
-    left: 70%;
   }
   &:nth-child(6) {
+    @include absolutePosition(55%, 40%);
     animation: rotateGears 2.5s infinite linear;
     font-size: 4rem;
-    position: absolute;
-    top: 55%;
-    left: 40%;
   }
   &:nth-child(7) {
+    @include absolutePosition(80%, 15%);
     font-size: 1.2rem;
-    position: absolute;
-    top: 80%;
-    left: 15%;
-
   }
   &:nth-child(8) {
+    @include absolutePosition(12%, auto, auto, 8%);
     animation: rotateGears 10s infinite linear;
     font-size: 9rem;
-    position: absolute;
-    top: 12%;
-    right: 8%;
-
   }
   &:nth-child(9) {
+    @include absolutePosition(90%, 90%);
     animation: rotateGears 2s infinite linear;
     font-size: 2rem;
-    position: absolute;
-    top: 90%;
-    left: 90%;
-
   }
   &:nth-child(10) {
+    @include absolutePosition(8%, 8%);
     animation: rotateGears 6s infinite ease-in-out;
     font-size: 1.4rem;
-    position: absolute;
-    top: 8%;
-    left: 8%;
-
   }
 }
