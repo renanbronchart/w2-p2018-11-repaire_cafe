@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  @include medium(){
+  @include medium{
     width: 95%;
   }
 }

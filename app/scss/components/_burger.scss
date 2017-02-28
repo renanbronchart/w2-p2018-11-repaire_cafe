@@ -8,14 +8,14 @@
 }
 
 .burger span{
-  display: block;
-  position: absolute;
-  height: 3px;
   width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  display: block;
   background: $chambray-blue;
   border-radius: 9px;
   opacity: 1;
-  left: 0;
   transform: rotate(0deg);
   transition: .25s ease-in-out;
   &:nth-child(1){
@@ -33,8 +33,8 @@
 }
 
 .burger.open {
-  right: 2%;
   position: fixed;
+  right: 2%;
   span {
     background: $concrete-white;
     &:nth-child(1) {
