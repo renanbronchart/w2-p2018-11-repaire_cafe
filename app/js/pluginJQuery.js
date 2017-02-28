@@ -10,7 +10,7 @@ const pluginsJquery = {
 
       $this.css('height', 'auto');
 
-      $(this).each(() => {
+      $this.each(() => {
         const heightBlock = $(this).outerHeight();
 
         heightBlocks.push(heightBlock);

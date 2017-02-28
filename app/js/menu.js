@@ -4,6 +4,7 @@ var menu = function () {
       $('.nav').toggleClass('active');
       $(this).toggleClass('open');
     });
+    toggleNavList();
   };
   var toggleNavList = function () {
     $('.nav__button').click(function (e) {
@@ -12,8 +13,7 @@ var menu = function () {
     })
   };
 
-  toggleNavList();
-  return {init: init, toggleNavList: toggleNavList}
+  return {init: init}
 }();
 
 menu.init();
