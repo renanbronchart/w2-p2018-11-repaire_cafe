@@ -21,6 +21,5 @@ $(document).ready(function () {
 
   setTimeout(function () {
     $('.body__loading').addClass('body__loading--animation');
-    $('body').removeClass('noScroll');
   }, 2000);
 })
