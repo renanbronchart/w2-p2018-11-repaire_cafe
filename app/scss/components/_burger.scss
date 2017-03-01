@@ -6,16 +6,17 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 3;
-  @include medium {
+  @include large {
     display: none;
+
   }
 }
 
 .burger span {
-  width: 100%;
+  width: 80%;
   height: 5px;
   position: absolute;
-  left: 0;
+  left: 4px;
   display: block;
   background: $chambray-blue;
   border-radius: 9px;
@@ -23,27 +24,27 @@
   transform: rotate(0deg);
   transition: .25s ease-in-out;
   &:nth-child(1) {
-    top: 0px;
+    top: 11px;
     transform-origin: left center;
   }
   &:nth-child(2) {
-    top: 20px;
+    top: 21px;
     transform-origin: left center;
   }
   &:nth-child(3) {
-    top: 40px;
+    top: 31px;
     transform-origin: left center;
   }
 }
 
 .burger.open {
   position: fixed;
-  right: 2%;
+  right: 2.5%;
   span {
     background: $concrete-white;
     &:nth-child(1) {
-      transform: rotate(45deg);
-      top: 3px;
+      transform: rotate(35deg);
+      top: 9px;
       left: 5px;
     }
     &:nth-child(2) {
@@ -51,8 +52,8 @@
       opacity: 0;
     }
     &:nth-child(3) {
-      transform: rotate(-45deg);
-      top: 33px;
+      transform: rotate(-35deg);
+      top: 29px;
       left: 5px;
     }
   }

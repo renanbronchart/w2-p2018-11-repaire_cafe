@@ -1,7 +1,7 @@
 .nav{
   width: 70%;
   display: none;
-  @include medium {
+  @include large {
     display: block;
   }
   .nav__lists {
@@ -20,11 +20,14 @@
   }
 
   .connexionButton {
+    width: 112px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: $font-family-base;
     color: $concrete-white;
     font-weight: bold;
     background: $chambray-blue;
-    width: 112px;
-    height: 30px;
   }
 }

@@ -15,13 +15,37 @@
 }
 
 .navAside__header {
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 0 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .profil__indication{
+  &.connexionRegister {
+    justify-content: center;
+  }
+  .profil__indication {
     text-align: center;
+  }
+  .profil__title {
+    font-family: $font-family-title;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .profil__buttons {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profil__button {
+    width: 100px;
+    height: 30px;
+    margin-top: 11px;
+    color: $chambray-blue;
+    font-family: $font-family-title;
+    font-size: 0.7rem;
+    background: #ffffff;
   }
   .identity {
     margin-bottom: 10px;

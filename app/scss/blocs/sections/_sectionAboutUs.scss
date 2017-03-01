@@ -1,21 +1,22 @@
 .section__aboutUs {
   .section__title {
-    @include medium {
+    @include large {
       text-align: left;
       font-family: $font-family-base;
       font-weight: 100;
+
     }
   }
 
   .wrapper{
-    @include medium {
+    @include large {
       display: flex;
       justify-content: space-between;
     }
   }
 
   .description__container{
-    @include medium {
+    @include large {
       width: 48%;
     }
   }
@@ -23,7 +24,7 @@
   .paragraph {
     color: $chambray-blue;
     font-family: $font-family-base;
-    @include medium {
+    @include large {
       margin: 0;
     }
   }
@@ -41,7 +42,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     display: none;
-    @include medium {
+    @include large {
       display: flex;
     }
   }

@@ -1,4 +1,8 @@
 .form {
+  @include medium {
+    width: 405px;
+    margin: auto;
+  }
   .field {
     margin-bottom: 15px;
     display: flex;
