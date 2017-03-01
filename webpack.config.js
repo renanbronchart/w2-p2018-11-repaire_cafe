@@ -1,33 +1,15 @@
-var path = require('path');
 var webpack = require('webpack');
 
-module.exports = {
-  entry: "./app/js/app.js",
-  output: {
-    path: __dirname + '/dist/js',
-    publicPath: '/js',
-    filename: 'bundle.js'
-  },
-  module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [
-          "style-loader",
-          "css-loader",
-          {
-            loader: 'postcss-loader',
-            options: {
-              plugins: function() {
-                return [
-                  require('autoprefixer')
-                ];
-              }
-            }
-          },
-          "sass-loader"
-        ]
-      },
-    ]
+env = process.env.NODE_ENV;
+
+if (env == 'dev') {
+  function buildConfig(env) {
+    return require('./dev.js')({ env: env })
+  }
+} else {
+  function buildConfig(env) {
+    return require('./prod.js')({ env: env })
   }
 }
+
+module.exports = buildConfig;

@@ -1,0 +1,57 @@
+//// card /////
+/////////////////////
+.card {
+  padding: 0 1.25rem;
+  vertical-align: top;
+  white-space: normal;
+  background: #ffffff;
+}
+
+.card__header {
+  padding: 1.8rem 0 0 0;
+}
+
+.card__title {
+  @extend .h2;
+  color: $chambray-blue;
+  font-weight: normal;
+
+  & + .card__subtitle {
+    margin: 1rem 0 0 0;
+  }
+}
+
+.card__subtitle {
+  @extend .h5;
+  color: $cinnabar-orange;
+  font-weight: normal;
+}
+
+.card__content {
+  margin: 1.8rem 0;
+  .paragraph {
+    text-align: left;
+  }
+}
+
+.card__picture {
+  padding: 1.8rem 0;
+  color: $cinnabar-orange;
+  .icon {
+    color: $victoria-purple;
+    font-size: 5rem;
+  }
+}
+
+.card__footer {
+  text-align: center;
+}
+
+.card__openModal {
+  padding: 16px;
+  display: inline-block;
+  .fa {
+    font-size: 1.8rem;
+    color: $cinnabar-orange;
+  }
+}

@@ -4,9 +4,853 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W2 Mobile First Project</title>
-  <script src='dist/js/bundle.js'></script>
+  <link rel="stylesheet" href="dist/css/main.css">
 </head>
-<body>
-  <h1>Hello world</h1>
+
+<body class='body--noScroll'>
+  <div class="body__loading">
+    <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='body__loadingLogo'/>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+  </div>
+
+  <div class="body__container">
+    <header class="header">
+      <h1 class="logo">
+        <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='logo__img'/>
+      </h1>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav">
+        <div class="nav__header">
+          <img src="http://placekitten.com/200/200?image=1" alt="Image du profil" class="imgProfil">
+          <div class="profil__indication">
+            <p class="identity">Chloé Echasseriau</p>
+            <p class="repairDone">12 réparations faites</p>
+          </div>
+        </div>
+        <div class="nav__content">
+          <a href="" class="nav__button">Menu</a>
+          <ul class="nav__lists">
+            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
+          </ul>
+
+          <a href="" class="nav__button">Notifications</a>
+          <ul class="nav__lists">
+            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
+          </ul>
+
+          <a href="" class="nav__button">Paramètres</a>
+          <ul class="nav__lists">
+            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </header>
+
+    <section class="section section__aboutUs section__container">
+      <div class="section__header">
+        <h2 class="section__title">Qui sommes nous ?</h2>
+        <div class="section__logo">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.png" alt="Logo Repair Cafe" class="imgResponsive">
+        </div>
+      </div>
+      <div class="section__body">
+        <p class="paragraph">Réparer ensemble, c’est l’idée des Repair Cafés, l’entrée est ouverte à tous.</p>
+
+        <p class="paragraph">Outils et matériel sont disponibles à l’endroit où est organisé le Repair Café, pour faire toutes les réparations possibles et imaginables.</p>
+
+        <p class="paragraph">Vêtements, meubles, appareils électriques, bicyclettes, vaisselle, objets utiles, jouets, et autres. Des experts bénévoles sont présents.</p>
+
+        <p class="paragraph">On y apporte des objets en mauvais état qu’on a chez soi. Et on se met à l’ouvrage avec les gens du métier. Il y a toujours quelque chose à apprendre au Repair Café.</p>
+
+        <p class="paragraph">Ceux qui n’ont rien à réparer prennent un café ou un thé, ou aident à réparer un objet appartenant à un autre.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section__categories">
+      <div class="section__header">
+        <h2 class="section__title">nos types de patients</h2>
+        <h3 class="section__subtitle">A quelle catégorie appartient votre objet ?</h3>
+      </div>
+      <div class="section__body">
+        <div class="group__categories">
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__clothes"></span>
+                <p class="group__categoryDescription">Vêtements</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__toy"></span>
+                <p class="group__categoryDescription">Jouets</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__furniture"></span>
+                <p class="group__categoryDescription">Meubles</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__speakerRadio"></span>
+                <p class="group__categoryDescription">Appareils</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__bike"></span>
+                <p class="group__categoryDescription">Transports</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__plate"></span>
+                <p class="group__categoryDescription">Vaiselles</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__kitchenUtensils"></span>
+                <p class="group__categoryDescription">Petits éléctroménagers</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__dishwasher"></span>
+                <p class="group__categoryDescription">Gros électroménagers</p>
+              </div>
+            </a>
+          </article>
+          <article class="group__category">
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__lamp"></span>
+                <p class="group__categoryDescription">Autres</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section__rules">
+      <div class="section__filter"></div>
+      <div class="section__header">
+        <h2 class="section__title">nos règles</h2>
+        <h3 class="section__subtitle">Voici les règles qui nous définisent</h3>
+      </div>
+      <div class="section__body">
+        <article class="card">
+          <div class="card__header">
+            <h3 class="card__title">C'est gratuit !</h3>
+          </div>
+          <div class="card__content">
+            <div class="card__picture">
+              <span class="icon icon__free"></span>
+            </div>
+            <p class="paragraph">Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.skdjskj dsjdskjdb dsijzdh dksjdsd dlsd dksj.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__header">
+            <h3 class="card__title">C'est gratuit</h3>
+          </div>
+          <div class="card__content">
+            <div class="card__picture">
+              <span class="icon icon__free"></span>
+            </div>
+            <p class="paragraph">Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__header">
+            <h3 class="card__title">C'est gratuit</h3>
+          </div>
+          <div class="card__content">
+            <div class="card__picture">
+              <span class="icon icon__free"></span>
+            </div>
+            <p class="paragraph">Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__header">
+            <h3 class="card__title">C'est gratuit</h3>
+          </div>
+          <div class="card__content">
+            <div class="card__picture">
+              <span class="icon icon__free"></span>
+            </div>
+            <p class="paragraph">Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__header">
+            <h3 class="card__title">C'est gratuit</h3>
+          </div>
+          <div class="card__content">
+            <div class="card__picture">
+              <span class="icon icon__free"></span>
+            </div>
+            <p class="paragraph">Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.Toute auscultation est gratuite et
+            effectuée par nos experts bénévoles. Vous pouvez nous rejoindre ou nous
+            soutenir sous forme de don ou de bénévolat.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class='section__navigation'>
+        <div class='section__navigationArc'>
+          <div class="section__navigationIndicator">
+            <p class="navigation__text">
+              <a href="#" class='navigation__button navigation__buttonPrev'>
+                <i class="fa fa-chevron-left"></i>
+              </a>
+              <span class="navigation__CurrentSection" id='navigation__CurrentSection'>1</span>
+              /
+              <span class="navigation__allSections">5</span>
+              <a href="#" class='navigation__button navigation__buttonNext navigation__button--active'>
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='section section__news section__slider'>
+      <div class="section__header">
+        <h2 class="section__title">Nos actualités</h2>
+      </div>
+      <div class="section__body">
+        <div class="slider__header">
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=1" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=2" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=3" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=4" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=5" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=6" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=7" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=8" alt="cat"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider__content">
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='' data-video='https://www.youtube.com/watch?v=8r8g9ihzTgE'>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='' data-video=''>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='http://www.france2.fr/emissions/tout-compte-fait/diffusions/09-01-2016_447188' data-video='https://www.youtube.com/watch?v=abxAuRdPSCE'>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : Les nouvelles tendances</h3>
+                  <p class="card__subtitle">France 2, Tout compte fait</p>
+                  <p class="card__subtitle">9 janvier 2015</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Avec internet et les sites de vente en ligne, les promotions les plus séduisantes sont proposées toute l'année. C’est le grand bouleversement du monde du commerce. Deux tiers des Français achètent maintenant sur internet et cette nouvelle donne annonce peut-être la fin des magasins traditionnels.
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='' data-video=''>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='' data-video=''>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='renanbronchart.com' data-video='https://www.youtube.com/watch?v=AaPGpPF1E_E'>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='renanbronchart.com' data-video=''>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card" data-source='' data-video='https://www.youtube.com/watch?v=AaPGpPF1E_E'>
+                <div class="card__header">
+                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
+                  <p class="card__subtitle">France 2, Elise Lucet</p>
+                  <p class="card__subtitle">15 avril 2016</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Écologique et collaboratif
+  À l’arrivée, deux options : réparer son objet soi-même ou faire appel à un réparateur bénévole. L’appareil est ensuite pesé, “pour savoir tout ce qui a été récupéré et qui n’ira pas à la déchetterie”, précise une femme. Cafetières, aspirateurs, machines à laver, ici tous les appareils peuvent être réparés. Il faut bien entendu attendre son tour avec un petit café et des jeux de société, car l’attente peut être longue (3h30 pour notre journaliste).
+                  </p>
+                  <p class='paragraph'>
+
+  Dans la salle voisine, les bénévoles sont à pied d’œuvre. La démarche du Repair café est bien sûr collaborative, mais aussi écologique. “L’idée s’est de ne pas jeter”, confie Jackie Gelvez, présidente de l’association. Et c’est aussi l’occasion pour les amateurs de s’essayer au bricolage. Le concept venu des Pays-Bas a fait des petits. Aujourd’hui, il existe des Repair café dans la plupart des grandes villes françaises.
+
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='section__navigation'>
+        <div class='section__navigationArc'>
+          <div class="section__navigationIndicator">
+            <a href="#" class='navigation__button navigation__buttonSource' target='_blank'>
+              <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+              <p class='navigation__buttonIndicator'>Source</p>
+            </a>
+            <a href="#" class='navigation__button navigation__buttonVideo navigation__button--active' target='_blank'>
+              <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              <p class='navigation__buttonIndicator'>Video</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class='section section__guestBook section__slider'>
+      <div class="section__header">
+        <h2 class="section__title">LIVRE D’OR</h2>
+      </div>
+      <div class="section__body">
+        <div class="slider__header">
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=1" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Renan Bronchart</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=2" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Chloé echasseriau</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=3" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Daniel libidi</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=4" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Christopher the king</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=5" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Gaoussou le livre fermé</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=6" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Renan Bronchart</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=7" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Renan Bronchart</p>
+            </div>
+          </div>
+          <div class="slider__container">
+            <div class="slider__element">
+              <div class="slider__avatar">
+                <div class="media-round">
+                  <img src="http://placekitten.com/200/200?image=8" alt="cat"/>
+                </div>
+              </div>
+              <p class='slider__avatarName'>Renan Bronchart</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="slider__content">
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='slider__container'>
+            <div class="slider__element">
+              <div class="card">
+                <div class="card__header">
+                  <h3 class="card__title">Travail de qualité</h3>
+                  <p class="card__subtitle">Renan Bronchart</p>
+                </div>
+                <div class="card__content">
+                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  </p>
+                </div>
+                <div class="card__footer">
+                  <button class='card__openModal'>
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <ul class="navSticky">
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-wrench" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+
+    <div id="modal" class="modal">
+      <div class="modal__content">
+        <div class="modal__tools">
+          <button class="modal__tool modal__close">
+            <i class="fa fa-close"></i>
+          </button>
+          <a class="modal__tool modal__share" href='http://www.facebook.com' target='_blank'>
+            <i class="fa fa-share"></i>
+          </a>
+        </div>
+        <div class="modal__details">
+          <div class="modal__header">
+            <div class="modal__title"></div>
+            <div class="modal__subtitle"></div>
+          </div>
+          <div class="modal__body">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://use.fontawesome.com/0d05212486.js"></script>
+  <script async src='dist/js/bundle.js'></script>
 </body>
 </html>

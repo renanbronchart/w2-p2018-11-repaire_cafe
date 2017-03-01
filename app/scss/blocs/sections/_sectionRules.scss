@@ -1,0 +1,73 @@
+.section__rules {
+  @include background-image('home/atelier-adelin.jpg');
+  padding-bottom: 18vw;
+  z-index: 0;
+  @include medium {
+    padding-bottom: 138px;
+  }
+  @include large {
+    padding: 2.5rem 0 5rem 0;
+  }
+
+  .section__header {
+    color: #ffffff;
+  }
+
+  .section__body {
+    padding: 0 0 2.8rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    @include large {
+      padding: 0 1rem 2.8rem 1rem;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+      overflow: inherit;
+      white-space: normal;
+    }
+  }
+
+  .card {
+    @extend .card;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    @include medium {
+      width: 60%;
+    }
+    @include large {
+      width: 19%;
+      max-width: 420px;
+    }
+    &:first-child {
+      margin: 0 5%;
+      @include medium {
+        margin: 0 5% 0 20%;
+      }
+      @include large {
+        margin: 0;
+      }
+    }
+
+    & + .card {
+      margin: 0 5% 0 0;
+      @include large {
+        margin: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 20%;
+      @include large {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .section__navigation {
+    @include large {
+      display: none;
+    }
+  }
+}

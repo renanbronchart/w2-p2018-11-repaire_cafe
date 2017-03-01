@@ -1,0 +1,69 @@
+////// navigation section //////
+///////////////////////////////
+.section__navigation {
+  width: 100%;
+  height: 18vw;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  @include medium {
+    max-width: 768px;
+    max-height: 138px;
+    left: 50%;
+    margin: 0 0 0 -384px;
+  }
+}
+
+.section__navigationArc {
+  width: 100%;
+  height: 36vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-radius: 100%;
+  @include medium {
+    max-height: 276px;
+  }
+}
+
+.section__navigationIndicator {
+  height: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation__text {
+  width: 100%;
+  color: $cinnabar-orange;
+}
+
+.navigation__CurrentSection {
+  @include font-size(2rem);
+}
+
+.navigation__button {
+  width: auto;
+  padding: 0 20px;
+  margin: 0 5%;
+  text-decoration: none;
+  color: $chambray-blue;
+  cursor: not-allowed;
+  display: inline-block;
+  opacity: 0.5;
+  .fa {
+    @include font-size(1.6rem);
+  }
+
+  &--active {
+    cursor: pointer;
+    color: $cinnabar-orange;
+    opacity: 1;
+  }
+}
+
+.navigation__buttonNext, .navigation__buttonPrev {
+  color: $cinnabar-orange;
+}

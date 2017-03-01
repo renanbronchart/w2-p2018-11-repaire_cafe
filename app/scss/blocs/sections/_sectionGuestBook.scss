@@ -1,0 +1,38 @@
+.section__guestBook {
+  .slider__avatar {
+    @include avatar(5rem, 0, 0);
+  }
+
+  .slider__avatarName {
+    opacity: 0;
+  }
+
+  .slick-current .slider__avatarName {
+    opacity: 1;
+  }
+
+
+  .slider__content {
+    position: relative;
+    .slider__container {
+      padding: 12rem 0;
+    }
+    &:after {
+      content: ' ';
+      @include background-image('home/atelier_collage.jpg');
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+
+  .card__content {
+    max-height: 5rem;
+    margin: 1.8rem 0 0 0;
+    overflow: hidden;
+  }
+}

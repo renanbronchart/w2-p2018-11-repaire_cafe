@@ -4,17 +4,43 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack -p",
-    "dev": "webpack-dev-server -p"
+    "server": "NODE_ENV=dev webpack-dev-server --progress --profile --colors",
+    "watch-css": "NODE_ENV=dev webpack --watch",
+    "prod": "NODE_ENV=prod webpack --progress --profile --colors",
+    "dev": "NODE_ENV=dev concurrently --kill-others \"npm run server\" \"npm run watch-css\""
   },
+  "keywords": [
+    "webpack",
+    "webpack-dev-server",
+    "template",
+    "starter",
+    "es6",
+    "babel"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.15",
+    "concurrently": "^3.1.0",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
-    "node-sass": "^4.5.0",
-    "postcss-loader": "^1.3.0",
-    "sass-loader": "^6.0.0",
+    "csso-loader": "^0.2.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.2.2",
+    "sass": "^0.5.0",
+    "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
-    "webpack": "^2.2.1"
+    "uglify-loader": "^1.4.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "slick-carousel": "^1.6.0"
   }
 }

@@ -1,0 +1,39 @@
+.section {
+  padding: 2.5rem 0 5rem 0;
+  position: relative;
+  &.section__container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.section__filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #36539a;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.section__header {
+  margin: 0;
+  text-align: center;
+  font-family: $font-family-base;
+  color: $chambray-blue;
+}
+
+.section__title {
+  @extend .h3;
+  text-transform: uppercase;
+}
+
+.section__subtitle {
+  @extend .p;
+  margin: 2.4rem 0 0 0;
+}
+
+.section__body {
+  margin: 2.3rem 0 0 0;
+}

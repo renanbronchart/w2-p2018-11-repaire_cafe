@@ -1,0 +1,77 @@
+.body {
+  @include font-size(0.9rem);
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $font-family-title;
+  font-weight: bold;
+}
+
+.h1 {
+  @include font-size(2rem);
+  @include medium {
+    @include font-size(2.4rem);
+  }
+  @include large {
+    @include font-size(2.8rem);
+  }
+}
+
+.h2 {
+  @include font-size(1.7rem);
+  @include medium {
+    @include font-size(1.9rem);
+  }
+  @include large {
+    @include font-size(2.1rem);
+  }
+}
+
+.h3 {
+  @include font-size(1.5rem);
+  @include medium {
+    @include font-size(1.7rem);
+  }
+  @include large {
+    @include font-size(2rem);
+  }
+}
+
+.h4 {
+  @include font-size(1.2rem);
+  @include medium {
+    @include font-size(1.3rem);
+  }
+  @include large {
+    @include font-size(1.5rem);
+  }
+}
+
+.h5 {
+  @include font-size(0.7rem);
+  @include medium {
+    @include font-size(0.8rem);
+  }
+  @include large {
+    @include font-size(0.85rem);
+  }
+}
+
+p, .p {
+  @include font-size(0.9rem);
+  font-family: $font-family-base;
+  font-weight: normal;
+  @include medium {
+    @include font-size(1rem);
+  }
+  @include large {
+    @include font-size(1.1rem);
+  }
+}
+
+.paragraph + .paragraph {
+  margin: 1rem 0 0 0;
+  @include medium {
+    margin: 1.25rem 0 0 0;
+  }
+}
