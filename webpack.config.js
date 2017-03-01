@@ -1,9 +1,11 @@
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var extractSass = new ExtractTextPlugin({
-  filename: "../css/[name].css"
+  filename: "../css/[name].css",
+  fallback: 'style-loader'
 });
 
 module.exports = {
@@ -29,7 +31,8 @@ module.exports = {
           loader: [{
             loader: "css-loader",
             options: {
-              sourceMap: true
+              sourceMap: true,
+              minimize: true
             }
           },
           {
@@ -55,6 +58,14 @@ module.exports = {
     ]
   },
   plugins: [
-    extractSass
+    extractSass,
+    // Use copyWebpackPlugin for directory fonts
+    new CopyWebpackPlugin([
+      { from: './app/fonts', to: '../fonts' }
+    ],
+    {
+      copyUnmodified: true
+    }),
+    new webpack.optimize.UglifyJsPlugin()
   ]
 }
