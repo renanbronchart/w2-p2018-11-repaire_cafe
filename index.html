@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W2 Mobile First Project</title>
-  <!-- <script src="https://use.fontawesome.com/0d05212486.js"></script> -->
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
-<body>
+<body class='body--noScroll'>
   <div class="body__loading">
     <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='body__loadingLogo'/>
     <span class="icon icon_repaire"></span>
@@ -35,7 +34,7 @@
       </div>
       <nav class="nav">
         <div class="nav__header">
-          <img src="dist/img/imageProfil.png" alt="Image du profil" class="imgProfil">
+          <img src="http://placekitten.com/200/200?image=1" alt="Image du profil" class="imgProfil">
           <div class="profil__indication">
             <p class="identity">Chloé Echasseriau</p>
             <p class="repairDone">12 réparations faites</p>
@@ -105,58 +104,76 @@
       <div class="section__body">
         <div class="group__categories">
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__clothes"></span>
-              <p class="group__categoryDescription">Vêtements</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__clothes"></span>
+                <p class="group__categoryDescription">Vêtements</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__toy"></span>
-              <p class="group__categoryDescription">Jouets</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__toy"></span>
+                <p class="group__categoryDescription">Jouets</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__furniture"></span>
-              <p class="group__categoryDescription">Meubles</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__furniture"></span>
+                <p class="group__categoryDescription">Meubles</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__speakerRadio"></span>
-              <p class="group__categoryDescription">Appareils</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__speakerRadio"></span>
+                <p class="group__categoryDescription">Appareils</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__bike"></span>
-              <p class="group__categoryDescription">Transports</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__bike"></span>
+                <p class="group__categoryDescription">Transports</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__plate"></span>
-              <p class="group__categoryDescription">Vaiselles</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__plate"></span>
+                <p class="group__categoryDescription">Vaiselles</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__kitchenUtensils"></span>
-              <p class="group__categoryDescription">Petits éléctroménagers</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__kitchenUtensils"></span>
+                <p class="group__categoryDescription">Petits éléctroménagers</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__dishwasher"></span>
-              <p class="group__categoryDescription">Gros électroménagers</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__dishwasher"></span>
+                <p class="group__categoryDescription">Gros électroménagers</p>
+              </div>
+            </a>
           </article>
           <article class="group__category">
-            <div class="group__categoryContent">
-              <span class="icon icon__lamp"></span>
-              <p class="group__categoryDescription">Autres</p>
-            </div>
+            <a href="" class='group__categoryLink'>
+              <div class="group__categoryContent">
+                <span class="icon icon__lamp"></span>
+                <p class="group__categoryDescription">Autres</p>
+              </div>
+            </a>
           </article>
         </div>
       </div>
@@ -353,7 +370,7 @@
         <div class="slider__content">
           <div class='slider__container'>
             <div class="slider__element">
-              <div class="card" data-source='' data-video=''>
+              <div class="card" data-source='' data-video='https://www.youtube.com/watch?v=8r8g9ihzTgE'>
                 <div class="card__header">
                   <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
                   <p class="card__subtitle">France 2, Elise Lucet</p>
@@ -393,14 +410,14 @@
           </div>
           <div class='slider__container'>
             <div class="slider__element">
-              <div class="card" data-source='' data-video=''>
+              <div class="card" data-source='http://www.france2.fr/emissions/tout-compte-fait/diffusions/09-01-2016_447188' data-video='https://www.youtube.com/watch?v=abxAuRdPSCE'>
                 <div class="card__header">
-                  <h3 class="card__title">Consomation : À la découverte du repaire café</h3>
-                  <p class="card__subtitle">France 2, Elise Lucet</p>
-                  <p class="card__subtitle">15 avril 2016</p>
+                  <h3 class="card__title">Consomation : Les nouvelles tendances</h3>
+                  <p class="card__subtitle">France 2, Tout compte fait</p>
+                  <p class="card__subtitle">9 janvier 2015</p>
                 </div>
                 <div class="card__content">
-                  <p class='paragraph'>Je remercie tous les bénévoles pour leurs envies d’aider les autres. Cette association a un grand potentiel et pose à l’entraide. Mon chargeur d’ordinateur a été parfaitement réparé. Bonne continuation
+                  <p class='paragraph'>Avec internet et les sites de vente en ligne, les promotions les plus séduisantes sont proposées toute l'année. C’est le grand bouleversement du monde du commerce. Deux tiers des Français achètent maintenant sur internet et cette nouvelle donne annonce peut-être la fin des magasins traditionnels.
                   </p>
                 </div>
                 <div class="card__footer">
@@ -833,6 +850,7 @@
       </div>
     </div>
   </div>
+  <script src="https://use.fontawesome.com/0d05212486.js"></script>
   <script async src='dist/js/bundle.js'></script>
 </body>
 </html>

@@ -17,7 +17,7 @@ var modal = function() {
         $modal.find('.modal__subtitle').html(cardContent.subtitle);
         $modal.find('.modal__body').html(cardContent.content);
 
-        $body.addClass('noScroll');
+        $body.addClass('body--noScroll');
         $modal.addClass('modal--active');
       })
     })
@@ -25,7 +25,7 @@ var modal = function() {
     $('.modal, .modal__close, .fa-close').on('click', function(e) {
       if(e.target == this) {
         $modal.removeClass('modal--active');
-        $body.removeClass('noScroll');
+        $body.removeClass('body--noScroll');
       }
     })
 
