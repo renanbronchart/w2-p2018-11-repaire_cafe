@@ -5,3 +5,10 @@ body {
     overflow: hidden;
   }
 }
+
+.body__container {
+  display: none;
+  &--active {
+    display: block;
+  }
+}

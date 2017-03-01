@@ -5,13 +5,21 @@ global.$ = require('jquery');
 
 // Call file js
 $(document).ready(function () {
-  require('./pluginJQuery.js');
-  require('./slickSlider.js');
+  setTimeout(function() {
+    $('.body__container').addClass('body__container--active');
 
-  require('./disabledButtons.js');
+    require('./pluginJQuery.js');
+    require('./slickSlider.js');
 
-  require('./rules.js');
-  require('./buttonNavigation.js');
-  require('./modal.js');
-  require('./menu.js');
+    require('./disabledButtons.js');
+
+    require('./rules.js');
+    require('./buttonNavigation.js');
+    require('./modal.js');
+    require('./menu.js');
+  }, 500);
+
+  setTimeout(function () {
+    $('.body__loading').addClass('body__loading--animation');
+  }, 2000);
 })
