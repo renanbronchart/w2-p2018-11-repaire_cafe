@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:prod": "NODE_ENV=prod webpack --progress --profile --colors",
-    "prod": "NODE_ENV=prod webpack",
     "server": "NODE_ENV=dev webpack-dev-server --progress --profile --colors",
     "watch-css": "NODE_ENV=dev webpack --watch",
-    "build:dev": "webpack --env=dev --progress --profile --colors",
+    "prod": "NODE_ENV=prod webpack --progress --profile --colors",
     "dev": "NODE_ENV=dev concurrently --kill-others \"npm run server\" \"npm run watch-css\""
   },
   "keywords": [

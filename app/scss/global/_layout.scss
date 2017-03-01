@@ -1,7 +1,7 @@
 body {
   background-color: $concrete-white;
   padding: 0 0 64px 0;
-  &.noScroll {
+  &.body--noScroll {
     overflow: hidden;
   }
 }
