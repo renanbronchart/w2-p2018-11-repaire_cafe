@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:prod": "NODE_ENV=prod webpack --progress --profile --colors",
     "prod": "NODE_ENV=prod webpack",
-    "server": "webpack-dev-server",
-    "watch-css": "webpack --watch",
+    "server": "NODE_ENV=dev webpack-dev-server --progress --profile --colors",
+    "watch-css": "NODE_ENV=dev webpack --watch",
+    "build:dev": "webpack --env=dev --progress --profile --colors",
     "dev": "NODE_ENV=dev concurrently --kill-others \"npm run server\" \"npm run watch-css\""
   },
   "keywords": [
@@ -24,6 +26,7 @@
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.15",
     "concurrently": "^3.1.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
@@ -36,7 +39,7 @@
     "style-loader": "^0.13.1",
     "uglify-loader": "^1.4.0",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.4.0"
+    "webpack-dev-server": "^2.4.1"
   },
   "dependencies": {
     "jquery": "^3.1.1",
