@@ -1,0 +1,57 @@
+.myacount {
+  background: $chambray-blue;
+}
+
+.myacount__container {
+  width: 90%;
+  margin: auto;
+}
+
+.myacount__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myacount__section{
+  border-top: 1px solid #ffffff;
+}
+
+.myacountSection__title {
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.myacount__reparations {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reparation__figure{
+  width: 52px;
+  background: #4061B2;
+}
+
+.reparation__date {
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 0.875rem;
+}
+
+.reparation__more {
+  width: 66px;
+  height: 23px;
+  font-family: $font-family-base;
+  font-size: 0.75rem;
+  color: $chambray-blue;
+  background: #ffffff;
+}
+
+.myacount__text {
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 0.875rem;
+}
