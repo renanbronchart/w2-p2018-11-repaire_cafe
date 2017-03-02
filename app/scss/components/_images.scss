@@ -7,4 +7,7 @@
 .imgProfil{
   width: 75px;
   border-radius: 50%;
+  @include medium {
+    width: 105px;
+  }
 }
