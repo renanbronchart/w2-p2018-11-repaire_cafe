@@ -8,50 +8,95 @@
 }
 
 .myacount__header {
+  padding-bottom: 13px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.myacount__section{
+.myacount__title {
+  margin: 28px auto 22px auto;
+  font-family: $font-family-title;
+  font-size: 1.125rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  flex: 100%;
+  text-align: center;
+}
+
+.myacount__section {
   border-top: 1px solid #ffffff;
 }
 
 .myacountSection__title {
+  //width: 125px;
+  //margin: 0 45px;
+  //margin: auto;
+  position: relative;
+  bottom: 7px;
   color: #ffffff;
   font-family: $font-family-base;
   font-size: 0.875rem;
   text-transform: uppercase;
   text-align: center;
+  span{
+    background: $chambray-blue;
+    padding: 0 15px;
+  }
 }
 
 .myacount__reparations {
+  margin-top: 27px;
   display: flex;
   justify-content: space-between;
 }
 
-.reparation__figure{
+.reparation__figure {
   width: 52px;
+  padding: 12px 0;
   background: #4061B2;
+  text-align: center;
+  .icon{
+    font-size: 2.5rem;
+  }
 }
 
 .reparation__date {
+  margin-top: 10px;
   color: #ffffff;
   font-family: $font-family-base;
   font-size: 0.875rem;
+  text-align: center;
 }
 
 .reparation__more {
-  width: 66px;
-  height: 23px;
+  //width: 66px;
+  //height: 23px;
+  width: 85px;
+  margin: 27px auto;
+  padding: 5px 10px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
   font-family: $font-family-base;
   font-size: 0.75rem;
   color: $chambray-blue;
   background: #ffffff;
 }
 
+
 .myacount__text {
+  margin-bottom: 7px;
   color: #ffffff;
   font-family: $font-family-base;
   font-size: 0.875rem;
+}
+
+.myacount__description {
+  margin: 27px 0;
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 0.65625rem;
 }
