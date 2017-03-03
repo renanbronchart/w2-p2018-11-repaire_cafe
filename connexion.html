@@ -22,22 +22,25 @@
     <span class="icon icon_repaire"></span>
   </div>
   <div class="body__container">
-
     <header class="header">
-      <h1 class="logo">
-        <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='logo__img'/>
+      <h1 class="header__logo">
+        <a href="/">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='header__logoImg'/>
+        </a>
       </h1>
-      <div class="burger">
+      <div class="header__burger">
         <span></span>
         <span></span>
         <span></span>
       </div>
       <aside class="navAside">
-        <div class="navAside__header">
-          <img src="dist/img/imageProfil.png" alt="Image du profil" class="imgProfil">
-          <div class="profil__indication">
-            <p class="identity">Chloé Echasseriau</p>
-            <p class="repairDone">12 réparations faites</p>
+        <div class="navAside__header connexionRegister">
+          <div class="navAside__indication">
+            <p class="navAside__title">Vous avez un compte ?</p>
+            <div class="navAside__buttons">
+              <a href="connexion.html" class="navAside__buttonAcount">Connexion</a>
+              <a href="" class="navAside__buttonAcount">Inscription</a>
+            </div>
           </div>
         </div>
         <div class="navAside__content">
@@ -87,7 +90,6 @@
           </ul>
         </div>
       </nav>
-
     </header>
 
     <section class="section section__connexion">
@@ -98,11 +100,11 @@
         <form action="" class="form">
           <div class="field">
             <label for="pseudo-mail" class="label">Pseudo ou email</label>
-            <input type="text" class="input" id="pseudo-mail">
+            <input type="text" class="input" id="pseudo-mail" required>
           </div>
           <div class="field">
             <label for="password" class="label">Mot de passe</label>
-            <input type="text" class="input" id="password">
+            <input type="password" class="input" id="password" required>
           </div>
           <input type="submit" class="buttonSubmit">
         </form>
@@ -144,6 +146,8 @@
         </a>
       </li>
     </ul>
+    <div class="lightbox"></div>
+
   </div>
 
 

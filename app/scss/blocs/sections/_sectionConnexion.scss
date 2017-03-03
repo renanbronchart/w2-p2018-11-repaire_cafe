@@ -4,7 +4,18 @@
   padding: 0 10%;
   background: $chambray-blue;
   .section__title {
+    margin: 28px auto 22px auto;
+    font-family: $font-family-title;
+    font-size: 1.125rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 500;
+    flex: 100%;
+    text-align: center;
     padding-top: 28px;
-    color: #ffffff;
+    @include medium {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
   }
 }

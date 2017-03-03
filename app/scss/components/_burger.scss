@@ -1,4 +1,4 @@
-.burger {
+.header__burger {
   width: 42px;
   height: 42px;
   position: relative;
@@ -10,34 +10,34 @@
     display: none;
 
   }
+  span {
+    width: 80%;
+    height: 5px;
+    position: absolute;
+    left: 4px;
+    display: block;
+    background: $chambray-blue;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    &:nth-child(1) {
+      top: 11px;
+      transform-origin: left center;
+    }
+    &:nth-child(2) {
+      top: 21px;
+      transform-origin: left center;
+    }
+    &:nth-child(3) {
+      top: 31px;
+      transform-origin: left center;
+    }
+  }
 }
 
-.burger span {
-  width: 80%;
-  height: 5px;
-  position: absolute;
-  left: 4px;
-  display: block;
-  background: $chambray-blue;
-  border-radius: 9px;
-  opacity: 1;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-  &:nth-child(1) {
-    top: 11px;
-    transform-origin: left center;
-  }
-  &:nth-child(2) {
-    top: 21px;
-    transform-origin: left center;
-  }
-  &:nth-child(3) {
-    top: 31px;
-    transform-origin: left center;
-  }
-}
 
-.burger.open {
+.header__burger.open {
   position: fixed;
   right: 2.5%;
   span {
@@ -58,3 +58,5 @@
     }
   }
 }
+
+

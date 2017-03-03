@@ -1,6 +1,7 @@
 var menu = function () {
   var init = function () {
-    $('.burger').click(function () {
+    $('.header__burger').click(function () {
+      $('.lightbox').toggleClass('active');
       $('.navAside').toggleClass('active');
       $(this).toggleClass('open');
     });

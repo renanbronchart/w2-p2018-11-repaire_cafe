@@ -1,4 +1,4 @@
-.logo {
+.header__logo {
   display: flex;
   align-items: center;
   font-family: $font-family-base;
@@ -6,13 +6,13 @@
   color: $chambray-blue;
 }
 
-.logo__img {
+.header__logoImg {
   width: 200px;
   margin-right: 7px;
 }
 
 .logo__imgImportant {
-  margin: 35px auto;
+  width: 100%;
   display: block;
   text-align: center;
 }

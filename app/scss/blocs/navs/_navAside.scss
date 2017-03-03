@@ -23,38 +23,52 @@
   &.connexionRegister {
     justify-content: center;
   }
-  .profil__indication {
+  .navAside__imgProfil{
+    width: 75px;
+    border-radius: 50%;
+    @include medium {
+      width: 75px;
+    }
+  }
+  .navAside__indication {
     text-align: center;
   }
-  .profil__title {
+  .navAside__title {
     font-family: $font-family-title;
     font-size: 0.875rem;
     color: #ffffff;
     font-weight: bold;
   }
-  .profil__buttons {
-    margin-bottom: 16px;
+  .navAside__buttons {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .profil__button {
+  .navAside__buttonAcount {
     width: 100px;
     height: 30px;
     margin-top: 11px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $chambray-blue;
     font-family: $font-family-title;
     font-size: 0.7rem;
-    background: #ffffff;
+    text-decoration: none;
+    &:first-child {
+      margin-top: 0;
+    }
   }
-  .identity {
+  .navAside__identity {
     margin-bottom: 10px;
     font-family: $font-family-title;
     font-weight: bold;
     font-size: 0.875rem;
     color: $concrete-white;
   }
-  .repairDone {
+  .navAside__repairDone {
     padding: 3px 7px;
     font-size: 0.75rem;
     background: $concrete-white;

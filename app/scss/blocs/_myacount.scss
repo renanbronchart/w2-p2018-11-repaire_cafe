@@ -1,6 +1,9 @@
 .myacount {
   background: $chambray-blue;
   height: 100vh;
+  @include large {
+    background: url("https://s3.eu-west-2.amazonaws.com/repairecafe/profil/background.png");
+  }
 }
 
 .myacount__container {
@@ -34,14 +37,16 @@
   }
 }
 
+.myacount__img {
+  width: 120px;
+  border-radius: 50%;
+}
+
 .myacount__section {
   border-top: 1px solid #ffffff;
 }
 
 .myacountSection__title {
-  //width: 125px;
-  //margin: 0 45px;
-  //margin: auto;
   position: relative;
   bottom: 7px;
   color: #ffffff;
@@ -52,6 +57,11 @@
   span{
     background: $chambray-blue;
     padding: 0 15px;
+    &.colorBackground{
+      @include large {
+        background: #2C4583;
+      }
+    }
   }
 }
 
@@ -80,8 +90,6 @@
 }
 
 .reparation__more {
-  //width: 66px;
-  //height: 23px;
   width: 85px;
   margin: 27px auto;
   padding: 5px 10px;
