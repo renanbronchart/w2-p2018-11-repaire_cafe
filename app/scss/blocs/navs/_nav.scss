@@ -4,28 +4,25 @@
   @include large {
     display: block;
   }
+
   .nav__lists {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
   }
-  .nav__item {
 
-  }
   .nav__link {
-    font-family: $font-family-base;
     color: $chambray-blue;
     font-weight: bold;
   }
 
-  .connexionButton {
+  .nav__button {
     width: 112px;
     height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: $font-family-base;
     color: $concrete-white;
     font-weight: bold;
     background: $chambray-blue;
