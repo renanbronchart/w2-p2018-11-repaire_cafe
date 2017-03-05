@@ -1,4 +1,4 @@
-.myacount {
+.myaccount {
   background: $chambray-blue;
   height: 100vh;
   @include large {
@@ -6,7 +6,7 @@
   }
 }
 
-.myacount__container {
+.myaccount__container {
   width: 90%;
   margin: auto;
   @include medium {
@@ -14,7 +14,7 @@
   }
 }
 
-.myacount__header {
+.myaccount__header {
   padding-bottom: 13px;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
   flex-wrap: wrap;
 }
 
-.myacount__title {
+.myaccount__title {
   margin: 28px auto 22px auto;
   font-family: $font-family-title;
   font-size: 1.125rem;
@@ -37,16 +37,16 @@
   }
 }
 
-.myacount__img {
+.myaccount__img {
   width: 120px;
   border-radius: 50%;
 }
 
-.myacount__section {
+.myaccount__section {
   border-top: 1px solid #ffffff;
 }
 
-.myacountSection__title {
+.myaccountSection__title {
   position: relative;
   bottom: 7px;
   color: #ffffff;
@@ -65,7 +65,7 @@
   }
 }
 
-.myacount__reparations {
+.myaccount__reparations {
   margin-top: 27px;
   display: flex;
   justify-content: space-between;
@@ -103,14 +103,14 @@
 }
 
 
-.myacount__text {
+.myaccount__text {
   margin-bottom: 7px;
   color: #ffffff;
   font-family: $font-family-base;
   font-size: 0.875rem;
 }
 
-.myacount__description {
+.myaccount__description {
   margin: 27px 0;
   color: #ffffff;
   font-family: $font-family-base;
