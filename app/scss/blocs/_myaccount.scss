@@ -23,16 +23,16 @@
 }
 
 .myaccount__title {
+  @include font-size(1.125rem);
   margin: 28px auto 22px auto;
   font-family: $font-family-title;
-  font-size: 1.125rem;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: bold;
   flex: 100%;
   text-align: center;
   @include medium {
-    font-size: 2.5rem;
+    @include font-size(2.5rem);
     font-weight: 100;
   }
 }
@@ -50,8 +50,8 @@
   position: relative;
   bottom: 7px;
   color: #ffffff;
-  font-family: $font-family-base;
   font-size: 0.875rem;
+  font-family: $font-family-base;
   text-transform: uppercase;
   text-align: center;
   span{
@@ -77,19 +77,20 @@
   background: #4061B2;
   text-align: center;
   .icon{
-    font-size: 2.5rem;
+    @include font-size(2.5rem);
   }
 }
 
 .reparation__date {
+  @include font-size(0.875rem);
   margin-top: 10px;
   color: #ffffff;
   font-family: $font-family-base;
-  font-size: 0.875rem;
   text-align: center;
 }
 
 .reparation__more {
+  @include font-size(0.75rem);
   width: 85px;
   margin: 27px auto;
   padding: 5px 10px;
@@ -97,22 +98,21 @@
   box-sizing: border-box;
   text-align: center;
   font-family: $font-family-base;
-  font-size: 0.75rem;
   color: $chambray-blue;
   background: #ffffff;
 }
 
 
 .myaccount__text {
+  @include font-size(0.875rem);
   margin-bottom: 7px;
   color: #ffffff;
   font-family: $font-family-base;
-  font-size: 0.875rem;
 }
 
 .myaccount__description {
+  @include font-size(0.65625rem);
   margin: 27px 0;
   color: #ffffff;
   font-family: $font-family-base;
-  font-size: 0.65625rem;
 }
