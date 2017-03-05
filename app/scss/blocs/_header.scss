@@ -2,10 +2,12 @@
   width: 95%;
   margin: auto;
   padding: 11px 0;
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
   @include medium {
     width: 95%;
   }

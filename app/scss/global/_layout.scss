@@ -1,14 +1,16 @@
 body {
   background-color: $concrete-white;
-  padding: 0 0 64px 0;
   &.body--noScroll {
     overflow: hidden;
   }
 }
 
 .body__container {
+  min-height: 100vh;
+  padding: 0 0 64px 0;
   display: none;
   &--active {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
