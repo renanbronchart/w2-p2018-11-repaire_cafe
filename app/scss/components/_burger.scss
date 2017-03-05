@@ -22,15 +22,15 @@
     transform: rotate(0deg);
     transition: .25s ease-in-out;
     &:nth-child(1) {
-      top: 11px;
+      top: 9px;
       transform-origin: left center;
     }
     &:nth-child(2) {
-      top: 21px;
+      top: 19px;
       transform-origin: left center;
     }
     &:nth-child(3) {
-      top: 31px;
+      top: 29px;
       transform-origin: left center;
     }
   }
