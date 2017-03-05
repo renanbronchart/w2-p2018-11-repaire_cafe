@@ -1,8 +1,10 @@
 .header {
   width: 95%;
-  margin: 11px auto;
+  margin: auto;
+  padding: 11px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
   @include medium {
     width: 95%;
