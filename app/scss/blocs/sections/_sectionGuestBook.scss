@@ -1,4 +1,6 @@
 .section__guestBook {
+  padding: 2.5rem 0 0 0;
+
   .slider__avatar {
     @include avatar(5rem, 0, 0);
   }
