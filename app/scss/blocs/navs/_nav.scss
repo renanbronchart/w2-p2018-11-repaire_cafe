@@ -1,5 +1,5 @@
 .nav{
-  width: 70%;
+  width: 75%;
   display: none;
   @include large {
     display: block;
@@ -12,14 +12,19 @@
     align-items: center;
   }
 
+  .nav__item {
+    padding: 0 6px;
+    text-align: center;
+  }
+
   .nav__link {
     color: $chambray-blue;
     font-weight: bold;
   }
 
   .nav__button {
-    width: 112px;
     height: 30px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
