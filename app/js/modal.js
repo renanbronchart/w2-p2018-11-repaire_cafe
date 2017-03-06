@@ -1,8 +1,8 @@
 var modal = function() {
-  var init = function() {
-    var $modal = $('#modal');
-    var $body = $('body');
+  var $modal = $('#modal');
+  var $body = $('body');
 
+  var init = function() {
     $('.card').each(function() {
       var $this = $(this);
       var $buttonModal = $this.find('.card__openModal');
@@ -19,16 +19,31 @@ var modal = function() {
 
         $body.addClass('body--noScroll');
         $modal.addClass('modal--active');
+
+        closeModalKeyPress();
       })
     })
 
     $('.modal, .modal__close, .fa-close').on('click', function(e) {
       if(e.target == this) {
-        $modal.removeClass('modal--active');
-        $body.removeClass('body--noScroll');
+        closeModal();
       }
-    })
+    });
+  };
 
+  var closeModal = function() {
+    $modal.removeClass('modal--active');
+    $body.removeClass('body--noScroll');
+  };
+
+  var closeModalKeyPress = function() {
+    if ($('.modal--active').length) {
+      $(document).on('keyup', function(e) {
+        if (e.keyCode == 27) {
+          closeModal();
+        }
+      })
+    }
   };
 
   return {init: init};
