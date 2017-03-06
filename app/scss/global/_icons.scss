@@ -4,12 +4,6 @@
   font-family: $font-family-icon;
   display: inline-block;
   color: #ffffff;
-  &.icn-layer {
-    background-image: none;
-    font-style: normal;
-    font-weight: normal;
-    text-transform: none;
-  }
 }
 
 .icon__clothes {
@@ -70,26 +64,6 @@
 
 .icon_repaire {
   @include icon('\e912');
-}
-
-.icon__repaireColor {
-  .icon__layer.icon__layer--1 {
-    @include icon('\e913');
-    margin-left: -1.13671875em;
-    color: $cinnabar-orange;
-  }
-  .icon__layer.icon__layer--3 {
-    @include icon('\e914');
-    margin-left: -1.13671875em;
-    color: $chambray-blue;
-
-  }
-  .icon__layer.icon__layer--2 {
-    @include icon('\e915');
-    margin-left: -1.13671875em;
-    color: $chambray-blue;
-
-  }
 }
 
 .icon__onlyOne {

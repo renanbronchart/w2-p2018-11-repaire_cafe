@@ -7,6 +7,20 @@
 .header__logoImg {
   width: 200px;
   margin-right: 7px;
+  display: none;
+  @include medium {
+    display: block;
+  }
+}
+
+.header__logoImg--mobile {
+  width: auto;
+  height: 42px;
+  max-height: 42px;
+  display: block;
+  @include medium {
+    display: none;
+  }
 }
 
 .logo__imgImportant {
