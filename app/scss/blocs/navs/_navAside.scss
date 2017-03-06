@@ -1,4 +1,4 @@
-.nav {
+.navAside {
   width: 260px;
   height: 100%;
   position: fixed;
@@ -6,7 +6,7 @@
   right: -260px;
   z-index: 2;
   background: $chambray-blue;
-  overflow: scroll;
+  overflow: hidden;
   transition: 0.5s;
   &.active{
     right: 0;
@@ -14,23 +14,68 @@
   }
 }
 
-.nav__header {
-  margin-top: 50px;
+.navAside__scrollable {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.navAside__header {
   padding: 0 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  .profil__indication{
+  &.connexionRegister {
+    justify-content: center;
+  }
+  .navAside__imgProfil{
+    width: 75px;
+    border-radius: 50%;
+    @include medium {
+      width: 75px;
+    }
+  }
+  .navAside__indication {
     text-align: center;
   }
-  .identity {
+  .navAside__title {
+    font-family: $font-family-title;
+    font-size: 0.875rem;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  .navAside__buttons {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navAside__buttonaccount {
+    width: 100px;
+    height: 30px;
+    margin-top: 11px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $chambray-blue;
+    font-family: $font-family-title;
+    font-size: 0.7rem;
+    text-decoration: none;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .navAside__identity {
     margin-bottom: 10px;
     font-family: $font-family-title;
     font-weight: bold;
     font-size: 0.875rem;
     color: $concrete-white;
   }
-  .repairDone {
+  .navAside__repairDone {
     padding: 3px 7px;
     font-size: 0.75rem;
     background: $concrete-white;
@@ -41,10 +86,10 @@
   }
 }
 
-.nav__content {
+.navAside__content {
   width: 90%;
   margin: 25px auto 0 auto;
-  .nav__button{
+  .navAside__button{
     width: 100%;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -56,15 +101,15 @@
     font-size: 0.875rem;
     font-weight: bold;
   }
-  .nav__lists {
+  .navAside__lists {
     margin-left: 25px;
     padding-top: 16.5px;
     display: none;
   }
-  .nav__item {
+  .navAside__item {
     margin-bottom: 16.5px;
   }
-  .nav__link {
+  .navAside__link {
     font-family: $font-family-title;
     color: #ffffff;
     font-size: 0.6875rem;

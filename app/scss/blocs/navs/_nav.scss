@@ -1,0 +1,30 @@
+.nav{
+  width: 70%;
+  display: none;
+  @include large {
+    display: block;
+  }
+
+  .nav__lists {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: $chambray-blue;
+    font-weight: bold;
+  }
+
+  .nav__button {
+    width: 112px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $concrete-white;
+    font-weight: bold;
+    background: $chambray-blue;
+  }
+}

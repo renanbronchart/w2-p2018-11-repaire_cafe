@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W2 Mobile First Project</title>
+  <!-- <script src="https://use.fontawesome.com/0d05212486.js"></script> -->
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
 <body class='body--noScroll'>
   <div class="body__loading">
-    <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='body__loadingLogo'/>
+    <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='body__loadingLogo'/>
     <span class="icon icon_repaire"></span>
     <span class="icon icon_repaire"></span>
     <span class="icon icon_repaire"></span>
@@ -21,27 +22,66 @@
     <span class="icon icon_repaire"></span>
     <span class="icon icon_repaire"></span>
   </div>
-
   <div class="body__container">
     <header class="header">
-      <h1 class="logo">
-        <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.png" alt="logo repaire café" class='logo__img'/>
+      <h1 class="header__logo">
+        <a href="/">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='header__logoImg'/>
+        </a>
       </h1>
-      <div class="burger">
+      <div class="header__burger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <nav class="nav">
-        <div class="nav__header">
-          <img src="http://placekitten.com/200/200?image=1" alt="Image du profil" class="imgProfil">
-          <div class="profil__indication">
-            <p class="identity">Chloé Echasseriau</p>
-            <p class="repairDone">12 réparations faites</p>
+      <aside class="navAside">
+        <div class="navAside__scrollable">
+          <div class="navAside__header connexionRegister">
+            <div class="navAside__indication">
+              <p class="navAside__title">Vous avez un compte ?</p>
+              <div class="navAside__buttons">
+                <a href="connexion.html" class="navAside__buttonaccount">Connexion</a>
+                <a href="" class="navAside__buttonaccount">Inscription</a>
+              </div>
+            </div>
+          </div>
+          <div class="navAside__content">
+            <a href="" class="navAside__button">Menu</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
+            <a href="" class="navAside__button">Notifications</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
+            <a href="" class="navAside__button">Paramètres</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
           </div>
         </div>
+      </aside>
+
+      <nav class="nav">
         <div class="nav__content">
-          <a href="" class="nav__button">Menu</a>
           <ul class="nav__lists">
             <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
             <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
@@ -49,28 +89,8 @@
             <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
             <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
             <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
+            <li class="nav__item"><a href="connexion.html" class="nav__button">Connexion</a></li>
           </ul>
-
-          <a href="" class="nav__button">Notifications</a>
-          <ul class="nav__lists">
-            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
-          </ul>
-
-          <a href="" class="nav__button">Paramètres</a>
-          <ul class="nav__lists">
-            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
-          </ul>
-
         </div>
       </nav>
     </header>
@@ -79,20 +99,26 @@
       <div class="section__header">
         <h2 class="section__title">Qui sommes nous ?</h2>
         <div class="section__logo">
-          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.png" alt="Logo Repair Cafe" class="imgResponsive">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.svg" alt="Logo Repair Cafe" class="logo__imgImportant">
         </div>
       </div>
       <div class="section__body">
-        <p class="paragraph">Réparer ensemble, c’est l’idée des Repair Cafés, l’entrée est ouverte à tous.</p>
+        <div class="description__container">
+          <p class="paragraph">Réparer ensemble, c’est l’idée des Repair Cafés, l’entrée est ouverte à tous.</p>
 
-        <p class="paragraph">Outils et matériel sont disponibles à l’endroit où est organisé le Repair Café, pour faire toutes les réparations possibles et imaginables.</p>
+          <p class="paragraph">Outils et matériel sont disponibles à l’endroit où est organisé le Repair Café, pour faire toutes les réparations possibles et imaginables.</p>
 
-        <p class="paragraph">Vêtements, meubles, appareils électriques, bicyclettes, vaisselle, objets utiles, jouets, et autres. Des experts bénévoles sont présents.</p>
+          <p class="paragraph">Vêtements, meubles, appareils électriques, bicyclettes, vaisselle, objets utiles, jouets, et autres. Des experts bénévoles sont présents.</p>
 
-        <p class="paragraph">On y apporte des objets en mauvais état qu’on a chez soi. Et on se met à l’ouvrage avec les gens du métier. Il y a toujours quelque chose à apprendre au Repair Café.</p>
+          <p class="paragraph">On y apporte des objets en mauvais état qu’on a chez soi. Et on se met à l’ouvrage avec les gens du métier. Il y a toujours quelque chose à apprendre au Repair Café.</p>
 
-        <p class="paragraph">Ceux qui n’ont rien à réparer prennent un café ou un thé, ou aident à réparer un objet appartenant à un autre.
-        </p>
+          <p class="paragraph">Ceux qui n’ont rien à réparer prennent un café ou un thé, ou aident à réparer un objet appartenant à un autre.
+          </p>
+        </div>
+        <div class="image__container">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/atelier-adelin.jpg" alt="atelier" class="image">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/atelier-tissage.jpg" alt="tissage" class="image">
+        </div>
       </div>
     </section>
 
@@ -849,8 +875,10 @@
         </div>
       </div>
     </div>
+
+    <div class="lightbox"></div>
   </div>
-  <script src="https://use.fontawesome.com/0d05212486.js"></script>
+  <script async src="https://use.fontawesome.com/0d05212486.js"></script>
   <script async src='dist/js/bundle.js'></script>
 </body>
 </html>

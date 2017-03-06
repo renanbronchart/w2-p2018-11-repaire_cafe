@@ -1,0 +1,118 @@
+.myaccount {
+  background: $chambray-blue;
+  height: 100vh;
+  @include large {
+    background: url("https://s3.eu-west-2.amazonaws.com/repairecafe/profil/background.png");
+  }
+}
+
+.myaccount__container {
+  width: 90%;
+  margin: auto;
+  @include medium {
+    width: 409px;
+  }
+}
+
+.myaccount__header {
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.myaccount__title {
+  @include font-size(1.125rem);
+  margin: 28px auto 22px auto;
+  font-family: $font-family-title;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  flex: 100%;
+  text-align: center;
+  @include medium {
+    @include font-size(2.5rem);
+    font-weight: 100;
+  }
+}
+
+.myaccount__img {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.myaccount__section {
+  border-top: 1px solid #ffffff;
+}
+
+.myaccountSection__title {
+  position: relative;
+  bottom: 7px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-family: $font-family-base;
+  text-transform: uppercase;
+  text-align: center;
+  span{
+    background: $chambray-blue;
+    padding: 0 15px;
+    &.colorBackground{
+      @include large {
+        background: #2C4583;
+      }
+    }
+  }
+}
+
+.myaccount__reparations {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reparation__figure {
+  width: 52px;
+  padding: 12px 0;
+  background: #4061B2;
+  text-align: center;
+  .icon{
+    @include font-size(2.5rem);
+  }
+}
+
+.reparation__date {
+  @include font-size(0.875rem);
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: $font-family-base;
+  text-align: center;
+}
+
+.reparation__more {
+  @include font-size(0.75rem);
+  width: 85px;
+  margin: 27px auto;
+  padding: 5px 10px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: $font-family-base;
+  color: $chambray-blue;
+  background: #ffffff;
+}
+
+
+.myaccount__text {
+  @include font-size(0.875rem);
+  margin-bottom: 7px;
+  color: #ffffff;
+  font-family: $font-family-base;
+}
+
+.myaccount__description {
+  @include font-size(0.65625rem);
+  margin: 27px 0;
+  color: #ffffff;
+  font-family: $font-family-base;
+}
