@@ -16,9 +16,9 @@ var rulesSection = function() {
     if ($(window).width() < 1280) {
       $cardRules.setHeightBlock();
       carousel();
-    } else {
-      $cardTitle.setHeightBlock();
     }
+
+    $cardTitle.setHeightBlock();
 
     $(window).on('resize', function () {
       clearTimeout(idSetTimeout);
@@ -29,7 +29,6 @@ var rulesSection = function() {
   var onFinishResize = function() {
     if ($(this).width() < 1280 ) {
       $cardRules.setHeightBlock();
-      $cardTitle.css('height', 'auto');
 
       $('.section__rules .section__body').animate({
         scrollLeft: 0
@@ -42,8 +41,9 @@ var rulesSection = function() {
       carousel();
     } else {
       $cardRules.css('height', 'auto');
-      $cardTitle.setHeightBlock();
     }
+
+    $cardTitle.setHeightBlock();
   };
 
   var carousel = function() {

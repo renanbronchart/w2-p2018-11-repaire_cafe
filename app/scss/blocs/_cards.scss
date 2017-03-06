@@ -15,8 +15,6 @@
   @extend .h2;
   color: $chambray-blue;
   font-weight: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
 
   & + .card__subtitle {
     margin: 1rem 0 0 0;
