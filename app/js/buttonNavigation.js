@@ -1,23 +1,23 @@
-var buttonNavigation = function() {
-  var init = function() {
+const buttonNavigation = (() => {
+  const init = () => {
     $('.section__slider.section__news').each(function() {
-      var $this = $(this);
-      var $slickSlider = $this.find('.slick-slider');
+      const $this = $(this);
+      const $slickSlider = $this.find('.slick-slider');
 
       initNavigationNews($this);
 
-      $slickSlider.on('afterChange', function() {
+      $slickSlider.on('afterChange', () => {
         initNavigationNews($this);
       });
     });
-  }
+  };
 
-  var initNavigationNews = function($this) {
-    var $currentSlide = $this.find('.slider__content .slider__container.slick-current');
-    var dataVideo = $currentSlide.find('.card').attr('data-video');
-    var dataSource = $currentSlide.find('.card').attr('data-source');
-    var $buttonVideo = $this.find('.navigation__buttonVideo');
-    var $buttonSource = $this.find('.navigation__buttonSource');
+  var initNavigationNews = $this => {
+    const $currentSlide = $this.find('.slider__content .slider__container.slick-current');
+    const dataVideo = $currentSlide.find('.card').attr('data-video');
+    const dataSource = $currentSlide.find('.card').attr('data-source');
+    const $buttonVideo = $this.find('.navigation__buttonVideo');
+    const $buttonSource = $this.find('.navigation__buttonSource');
 
     if (dataVideo.length > 0) {
       addClassActive($buttonVideo, dataVideo);
@@ -32,7 +32,7 @@ var buttonNavigation = function() {
     }
   };
 
-  var addClassActive = function ($button, url) {
+  var addClassActive = ($button, url) => {
     $button.addClass('navigation__button--active');
     $button.removeAttr('disabled');
     if (url != 'undefined') {
@@ -40,16 +40,16 @@ var buttonNavigation = function() {
     }
   };
 
-  var removeClassActive = function ($button) {
+  var removeClassActive = $button => {
     $button.removeClass('navigation__button--active');
     $button.attr('href', '').attr('disabled', true);
   };
 
-  return {init: init, addClassActive: addClassActive, removeClassActive: removeClassActive};
-}();
+  return {init, addClassActive, removeClassActive};
+})();
 
 buttonNavigation.init();
 
-module.exports = {
-  buttonNavigation: buttonNavigation
-}
+export default {
+  buttonNavigation
+};

@@ -1,18 +1,18 @@
-var pageLoading = function() {
-  var init = function() {
-    var $bodyLoading = $('.body__loading');
+const pageLoading = (() => {
+  const init = () => {
+    const $bodyLoading = $('.body__loading');
 
-    setTimeout(function () {
+    setTimeout(() => {
       $bodyLoading.addClass('body__loading--animation');
       $('body').removeClass('body--noScroll');
     }, 2000);
 
-    setTimeout(function () {
+    setTimeout(() => {
       $bodyLoading.remove();
     }, 2500);
-  }
+  };
 
-  return {init: init};
-}();
+  return {init};
+})();
 
 pageLoading.init();

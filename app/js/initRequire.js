@@ -1,6 +1,6 @@
-var initRequire = function initRequire() {
-  var init = function() {
-    setTimeout(function() {
+const initRequire = function initRequire() {
+  const init = () => {
+    setTimeout(() => {
       $('.body__container').addClass('body__container--active');
 
       require('./pluginJQuery.js');
@@ -13,9 +13,9 @@ var initRequire = function initRequire() {
       require('./modal.js');
       require('./menu.js');
     }, 500);
-  }
+  };
 
-  return {init: init};
+  return {init};
 }();
 
 initRequire.init();

@@ -1,18 +1,18 @@
-var modal = function() {
-  var init = function() {
-    var $modal = $('#modal');
-    var $body = $('body');
+const modal = (() => {
+  const init = () => {
+    const $modal = $('#modal');
+    const $body = $('body');
 
     $('.card').each(function() {
-      var $this = $(this);
-      var $buttonModal = $this.find('.card__openModal');
-      var cardContent = {
+      const $this = $(this);
+      const $buttonModal = $this.find('.card__openModal');
+      const cardContent = {
         title: $this.find('.card__title').html(),
         subtitle: $this.find('.card__subtitle').html(),
         content: $this.find('.card__content').html()
       };
 
-      $buttonModal.on('click', function() {
+      $buttonModal.on('click', () => {
         $modal.find('.modal__title').html(cardContent.title);
         $modal.find('.modal__subtitle').html(cardContent.subtitle);
         $modal.find('.modal__body').html(cardContent.content);
@@ -31,7 +31,7 @@ var modal = function() {
 
   };
 
-  return {init: init};
-}();
+  return {init};
+})();
 
 modal.init();

@@ -1,11 +1,9 @@
-var disabledButtons = function() {
-  var init = function() {
-    $(document).on('click', '[disabled="disabled"]', function() {
-      return false;
-    })
+const disabledButtons = (() => {
+  const init = () => {
+    $(document).on('click', '[disabled="disabled"]', () => false)
   };
 
-  return {init: init};
-}();
+  return {init};
+})();
 
 disabledButtons.init();

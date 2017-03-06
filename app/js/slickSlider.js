@@ -1,15 +1,15 @@
-var slickSlider = function() {
-  var slick = require('slick-carousel').slick;
+const slickSlider = (() => {
+  const slick = require('slick-carousel').slick;
 
-  var init = function() {
+  const init = () => {
     initSliders();
   };
 
-  var initSliders = function() {
+  var initSliders = () => {
     $('.section__slider').each(function() {
-      var $this = $(this);
-      var $sliderHeader = $this.find('.slider__header');
-      var $sliderContent = $this.find('.slider__content');
+      const $this = $(this);
+      const $sliderHeader = $this.find('.slider__header');
+      const $sliderContent = $this.find('.slider__content');
 
       $sliderHeader.slick({
         slidesToShow: 7,
@@ -62,7 +62,7 @@ var slickSlider = function() {
     })
   };
 
-  return {init: init};
-}();
+  return {init};
+})();
 
 slickSlider.init();

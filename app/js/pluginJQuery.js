@@ -1,12 +1,12 @@
 const pluginsJquery = {
-  init: function () {
+  init() {
     this.newPlugins();
   },
 
-  newPlugins: function () {
+  newPlugins() {
     $.fn.setHeightBlock = function() {
-      const $this = $(this),
-            heightBlocks = [];
+      const $this = $(this);
+      const heightBlocks = [];
 
       $this.css('height', 'auto');
 

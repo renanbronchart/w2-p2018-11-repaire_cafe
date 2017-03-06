@@ -1,23 +1,23 @@
-var rulesSection = function() {
-  var buttonNavigation = require('./buttonNavigation.js').buttonNavigation;
-  var $navigationButtonNext = $('.section__rules .navigation__buttonNext');
-  var $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
-  var $cardRules = $('.section__rules .card');
-  var cardLength = $cardRules.length;
-  var offsetScroll;
-  var positionPrevCard;
-  var positionNextCard;
-  var idSetTimeout;
+const rulesSection = (() => {
+  const buttonNavigation = require('./buttonNavigation.js').buttonNavigation;
+  const $navigationButtonNext = $('.section__rules .navigation__buttonNext');
+  const $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
+  const $cardRules = $('.section__rules .card');
+  const cardLength = $cardRules.length;
+  let offsetScroll;
+  let positionPrevCard;
+  let positionNextCard;
+  let idSetTimeout;
 
-  var init = function() {
-    var $cardRules = $('.section__rules .card');
+  const init = () => {
+    const $cardRules = $('.section__rules .card');
 
     if ($(window).width() < 1280) {
       $cardRules.setHeightBlock();
       carousel();
     }
 
-    $(window).on('resize', function () {
+    $(window).on('resize', () => {
       clearTimeout(idSetTimeout);
       idSetTimeout = setTimeout(onFinishResize, 500);
     });
@@ -41,10 +41,10 @@ var rulesSection = function() {
     }
   };
 
-  var carousel = function() {
-    var pos = 0;
+  var carousel = () => {
+    let pos = 0;
 
-    $('.navigation__button.navigation__buttonNext').off('click').on('click', function() {
+    $('.navigation__button.navigation__buttonNext').off('click').on('click', () => {
       if (cardLength > (pos + 1)) {
         offsetScroll = ($($cardRules[0]).offset()).left;
         pos += 1;
@@ -65,7 +65,7 @@ var rulesSection = function() {
       return false;
     });
 
-    $('.navigation__button.navigation__buttonPrev').off('click').on('click', function() {
+    $('.navigation__button.navigation__buttonPrev').off('click').on('click', () => {
       if (pos > 0) {
         $('.navigation__buttonPrev').addClass('navigation__buttonActive');
         offsetScroll = ($($cardRules[0]).offset()).left;
@@ -88,7 +88,7 @@ var rulesSection = function() {
     });
   };
 
-  return {init: init, carousel: carousel};
-}();
+  return {init, carousel};
+})();
 
 rulesSection.init();

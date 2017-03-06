@@ -4,8 +4,8 @@ require('../scss/style.scss');
 global.$ = require('jquery');
 
 // Call file js
-$(document).ready(function () {
-  setTimeout(function() {
+$(document).ready(() => {
+  setTimeout(() => {
     $('.body__container').addClass('body__container--active');
 
     require('./initRequire.js');

@@ -1,7 +1,7 @@
-var menu = function () {
-  var idSetTimeout;
+const menu = (() => {
+  let idSetTimeout;
 
-  var init = function () {
+  const init = () => {
     $('.header__burger').on('click', function () {
       $('.lightbox').toggleClass('active');
       $('.navAside').toggleClass('active');
@@ -9,7 +9,7 @@ var menu = function () {
       $(this).toggleClass('open');
     });
 
-    $(window).on('resize', function () {
+    $(window).on('resize', () => {
       clearTimeout(idSetTimeout);
       idSetTimeout = setTimeout(closeNavAside, 500);
     });
@@ -17,21 +17,21 @@ var menu = function () {
     toggleNavList();
   };
 
-  var closeNavAside = function() {
+  var closeNavAside = () => {
     $('.lightbox.active').removeClass('active');
     $('.navAside.active').removeClass('active');
     $('.header__burger.open').removeClass('open');
     $('body').removeClass('body--noScroll');
   };
 
-  var toggleNavList = function () {
+  var toggleNavList = () => {
     $('.navAside__button').click(function (e) {
       $(this).next('.navAside__lists').toggle();
       return false;
     })
   };
 
-  return {init: init}
-}();
+  return {init}
+})();
 
 menu.init();
