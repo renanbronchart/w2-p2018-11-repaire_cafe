@@ -42,7 +42,7 @@
   }
   .navAside__title {
     font-family: $font-family-title;
-    font-size: 0.875rem;
+    @include font-size(0.875rem);
     color: #ffffff;
     font-weight: bold;
   }
@@ -62,7 +62,7 @@
     align-items: center;
     color: $chambray-blue;
     font-family: $font-family-title;
-    font-size: 0.7rem;
+    @include font-size(0.7rem);
     text-decoration: none;
     &:first-child {
       margin-top: 0;
@@ -72,12 +72,12 @@
     margin-bottom: 10px;
     font-family: $font-family-title;
     font-weight: bold;
-    font-size: 0.875rem;
+    @include font-size(0.875rem);
     color: $concrete-white;
   }
   .navAside__repairDone {
     padding: 3px 7px;
-    font-size: 0.75rem;
+    @include font-size(0.75rem);
     background: $concrete-white;
     font-family: $font-family-title;
     font-weight: bold;
@@ -98,7 +98,7 @@
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
     text-decoration: none;
-    font-size: 0.875rem;
+    @include font-size(0.875rem);
     font-weight: bold;
   }
   .navAside__lists {
@@ -112,7 +112,7 @@
   .navAside__link {
     font-family: $font-family-title;
     color: #ffffff;
-    font-size: 0.6875rem;
+    @include font-size(0.6875rem);
     text-decoration: none;
   }
 }

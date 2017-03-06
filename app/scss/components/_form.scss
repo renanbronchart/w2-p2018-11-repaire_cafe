@@ -12,7 +12,7 @@
     margin-bottom: 8px;
     font-family: $font-family-base;
     color: $concrete-white;
-    font-size: 0.75rem;
+    @include font-size(0.75rem);
   }
   .form__input {
     width: 100%;
@@ -38,7 +38,7 @@
 .form__connectWith {
   margin: 26px auto 0 auto;
   display: block;
-  font-size: 0.65rem;
+  @include font-size(0.65rem);
   font-family: $font-family-base;
   color: #ffffff;
   text-align: center;
@@ -50,6 +50,6 @@
   text-decoration: none;
   color: #ffffff;
   font-family: $font-family-base;
-  font-size: 0.75rem;
+  @include font-size(0.75rem);
   text-align: center;
 }
