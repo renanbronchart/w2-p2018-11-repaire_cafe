@@ -3,6 +3,7 @@ var rulesSection = function() {
   var $navigationButtonNext = $('.section__rules .navigation__buttonNext');
   var $navigationButtonPrev = $('.section__rules .navigation__buttonPrev');
   var $cardRules = $('.section__rules .card');
+  var $cardTitle = $('.section__rules .card__title');
   var cardLength = $cardRules.length;
   var offsetScroll;
   var positionPrevCard;
@@ -16,6 +17,8 @@ var rulesSection = function() {
       $cardRules.setHeightBlock();
       carousel();
     }
+
+    $cardTitle.setHeightBlock();
 
     $(window).on('resize', function () {
       clearTimeout(idSetTimeout);
@@ -39,6 +42,8 @@ var rulesSection = function() {
     } else {
       $cardRules.css('height', 'auto');
     }
+
+    $cardTitle.setHeightBlock();
   };
 
   var carousel = function() {

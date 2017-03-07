@@ -1,15 +1,61 @@
 .section__aboutUs {
+  @include large {
+    padding-top: 105px;
+  }
+
+  .section__title {
+    @include large {
+      text-align: left;
+      font-family: $font-family-base;
+      font-weight: 100;
+
+    }
+  }
+
+  .section__body{
+    @include large {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .description__container{
+    @include large {
+      width: 48%;
+    }
+  }
+
   .paragraph {
     color: $chambray-blue;
     font-family: $font-family-base;
     @include large {
-      width: 855px;
-      margin: 0 auto 25px auto;
+      margin: 0;
     }
   }
 
   .section__logo {
     width: 7rem;
-    margin: 2.4rem auto 0 auto;
+    margin: 2.4rem auto 2.4rem auto;
+    @include medium {
+      display: none;
+    }
+  }
+  .image__container{
+    width: 40%;
+    margin-top: -3.6rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: none;
+    @include large {
+      display: flex;
+    }
+  }
+  .image{
+    width: 350px;
+    &:last-child{
+      position: relative;
+      bottom: 85px;
+      left: 90px;
+    }
   }
 }

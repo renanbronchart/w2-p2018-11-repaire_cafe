@@ -65,7 +65,7 @@
     font-size: 6rem;
   }
   &:nth-child(6) {
-    @include absolutePosition(55%, 40%);
+    @include absolutePosition(60%, 40%);
     animation: rotateGears 2.5s infinite linear;
     font-size: 4rem;
   }

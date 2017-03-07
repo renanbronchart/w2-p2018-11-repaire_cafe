@@ -1,0 +1,59 @@
+.form {
+  @include medium {
+    width: 410px;
+    margin: auto;
+  }
+
+  .form__field {
+    margin-bottom: 1.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label {
+    @extend .p;
+    margin-bottom: 0.5rem;
+    font-family: $font-family-base;
+    color: $concrete-white;
+  }
+
+  input.form__input {
+    @extend .p;
+    width: 100%;
+    height: 1.75rem;
+    padding-left: 10px;
+    outline: none;
+    background: #4061B2;
+    color: $concrete-white;
+    border: none;
+  }
+
+  input.form__buttonSubmit {
+    @extend .p;
+    margin: auto;
+    display: block;
+    background: #ffffff;
+    font-family: $font-family-base;
+    border: none;
+    color: $chambray-blue;
+  }
+}
+
+.form__connectWith {
+  @extend .h5;
+  margin: 26px auto 0 auto;
+  display: block;
+  font-family: $font-family-base;
+  color: #ffffff;
+  text-align: center;
+}
+
+.form__linkSubscribe {
+  @extend .h5;
+  margin: auto;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: $font-family-base;
+  text-align: center;
+}

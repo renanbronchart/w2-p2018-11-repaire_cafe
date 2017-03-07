@@ -1,22 +1,22 @@
-const pluginsJquery = {
+var pluginsJquery = {
   init: function () {
     this.newPlugins();
   },
 
   newPlugins: function () {
     $.fn.setHeightBlock = function() {
-      const $this = $(this),
+      var $this = $(this),
             heightBlocks = [];
 
       $this.css('height', 'auto');
 
-      $this.each(() => {
-        const heightBlock = $(this).outerHeight();
+      $this.each( function() {
+        var heightBlock = $(this).outerHeight();
 
         heightBlocks.push(heightBlock);
       });
 
-      const maxHeight = Math.max.apply(null, heightBlocks);
+      var maxHeight = Math.max.apply(null, heightBlocks);
 
       $this.outerHeight(maxHeight);
     }

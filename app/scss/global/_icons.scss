@@ -15,7 +15,7 @@
 }
 
 .icon__bike {
-  @include icon('\e90b');
+  @include icon('\e90f');
 }
 
 .icon__kitchenUtensils {
@@ -23,7 +23,7 @@
 }
 
 .icon__furniture {
-  @include icon('\e909');
+  @include icon('\e90e');
 }
 
 .icon__lamp {
@@ -55,7 +55,7 @@
 }
 
 .icon__free {
-  @include icon('\e901');
+  @include icon('\e910');
 }
 
 .icon__surgery {
@@ -65,3 +65,40 @@
 .icon_repaire {
   @include icon('\e912');
 }
+
+.icon__onlyOne {
+  @include icon('\e911');
+}
+
+.icon__doctor {
+  @include icon('\e916');
+}
+
+.icon__syringe {
+  @include icon('\e917');
+}
+
+.icon__rip {
+  @include icon('\e918');
+}
+
+.icon__camera {
+  @include icon('\e919');
+}
+
+.icon__picture {
+  @include icon('\e91a');
+}
+
+.icon__video {
+  @include icon('\e91b');
+}
+
+.icon__back {
+  @include icon('\e91c');
+}
+
+.icon__add {
+  @include icon('\e91d');
+}
+

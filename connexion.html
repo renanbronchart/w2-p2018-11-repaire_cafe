@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>W2 Mobile First Project</title>
+  <!--<script src="https://use.fontawesome.com/ac5fa99fca.js"></script>-->
+  <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body>
+  <div class="body__loading">
+    <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='body__loadingLogo'/>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+    <span class="icon icon_repaire"></span>
+  </div>
+  <div class="body__container">
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="/">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='header__logoImg'/>
+        </a>
+      </h1>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <aside class="navAside">
+        <div class="navAside__scrollable">
+          <div class="navAside__header connexionRegister">
+            <div class="navAside__indication">
+              <p class="navAside__title">Vous avez un compte ?</p>
+              <div class="navAside__buttons">
+                <a href="connexion.html" class="navAside__buttonaccount">Connexion</a>
+                <a href="" class="navAside__buttonaccount">Inscription</a>
+              </div>
+            </div>
+          </div>
+          <div class="navAside__content">
+            <a href="" class="navAside__button">Menu</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
+            <a href="" class="navAside__button">Notifications</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
+            <a href="" class="navAside__button">Paramètres</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </aside>
+
+      <nav class="nav">
+        <div class="nav__content">
+          <ul class="nav__lists">
+            <li class="nav__item"><a href="" class="nav__link">Qui sommes-nous ?</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos règles</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos types de patients</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Nos actualités</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Livre d'or</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Contactez-nous</a></li>
+            <li class="nav__item"><a href="" class="nav__button">Connexion</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="section section__connexion section__container">
+      <div class="section__header">
+        <h2 class="section__title">Connexion</h2>
+      </div>
+      <div class="section__body">
+        <form action="moncompte.html" class="form">
+          <div class="form__field">
+            <label for="pseudo-mail" class="form__label">Pseudo ou email</label>
+            <input type="text" class="form__input" id="pseudo-mail"  tabindex="1" aria-required="true" required>
+          </div>
+          <div class="form__field">
+            <label for="password" class="form__label">Mot de passe</label>
+            <input type="password" class="form__input" id="password"  tabindex="2" aria-required="true" required>
+          </div>
+          <input type="submit" class="form__buttonSubmit" tabindex="3" >
+        </form>
+        <span class="form__connectWith">Se connecter avec</span>
+        <ul class="socials">
+          <li class="socials__item"><a href="#"><img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/facebook.svg" alt=""></a></li>
+          <li class="socials__item"><a href="#"><img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/google-plus.svg" alt=""></a></li>
+          <li class="socials__item"><a href="#"><img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/linkedin.svg" alt=""></a></li>
+          <li class="socials__item"><a href="#"><img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/twitter.svg" alt=""></a></li>
+        </ul>
+        <a href="" class="form__linkSubscribe">Vous n'avez pas de compte ?</a>
+      </div>
+    </section>
+
+    <ul class="navSticky">
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-wrench" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-smile-o" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-credit-card" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li class="navSticky__tab">
+        <a href="#" class="navSticky__tabLink">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="lightbox"></div>
+
+  </div>
+
+  <script async src="https://use.fontawesome.com/0d05212486.js"></script>
+  <script async src='dist/js/bundle.js'></script>
+</body>
+</html>

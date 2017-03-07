@@ -2,10 +2,19 @@
   @include font-size(0.9rem);
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $font-family-title;
-  font-weight: bold;
+  font-weight: 500;
+  @include medium {
+    font-weight: 100;
+  }
 }
+
 
 .h1 {
   @include font-size(2rem);
@@ -67,6 +76,10 @@ p, .p {
   @include large {
     @include font-size(1.1rem);
   }
+}
+
+a {
+  font-family: $font-family-base;
 }
 
 .paragraph + .paragraph {
