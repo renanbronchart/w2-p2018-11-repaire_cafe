@@ -34,7 +34,8 @@ module.exports = function (env) {
             loader: [{
               loader: "css-loader",
               options: {
-                sourceMap: true
+                sourceMap: true,
+                minimize: true
               }
             },
             {
@@ -66,6 +67,9 @@ module.exports = function (env) {
       ],
       {
         copyUnmodified: true
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        sourceMap: true
       }),
       new CleanWebpackPlugin(['dist'], {
         root   : path.resolve( __dirname, './' ),
