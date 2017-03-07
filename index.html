@@ -25,17 +25,17 @@
   <div class="body__container" role='main'>
     <header class="header">
       <h1 class="header__logo">
-        <a href="#" tabindex="-1">
+        <a href="#" tabindex="-1" title='retour à la home'>
           <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='header__logoImg'/>
           <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.svg" alt="Logo Repaire Cafe" class="header__logoImg header__logoImg--mobile">
         </a>
       </h1>
-      <div class="header__burger" role='button'>
+      <div class="header__burger" role='button' aria-label="navAside">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <aside class="navAside">
+      <aside class="navAside" id='navAside'>
         <div class="navAside__scrollable">
           <div class="navAside__header connexionRegister">
             <div class="navAside__indication">
@@ -47,18 +47,18 @@
             </div>
           </div>
           <div class="navAside__content">
-            <a href="" class="navAside__button" >Menu</a>
-            <ul class="navAside__lists" role='list'>
-              <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link">Nos actualités</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link">Livre d'or</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link">Contactez-nous</a></li>
+            <a href="" class="navAside__button" title='menu navigation'>Menu</a>
+            <ul class="navAside__lists">
+              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section qui sommes nous'>Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos règles'>Nos règles</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos types de patients'>Nos types de patients</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos actualités'>Nos actualités</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link" title="lien vers la section livre d'or">Livre d'or</a></li>
+              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section contactez-nous'>Contactez-nous</a></li>
             </ul>
 
             <a href="" class="navAside__button" >Notifications</a>
-            <ul class="navAside__lists" role='list'>
+            <ul class="navAside__lists">
               <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
               <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
               <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
@@ -68,7 +68,7 @@
             </ul>
 
             <a href="" class="navAside__button" >Paramètres</a>
-            <ul class="navAside__lists" role='list'>
+            <ul class="navAside__lists">
               <li class="navAside__item"><a href="" class="navAside__link">Qui sommes-nous ?</a></li>
               <li class="navAside__item"><a href="" class="navAside__link">Nos règles</a></li>
               <li class="navAside__item"><a href="" class="navAside__link">Nos types de patients</a></li>
@@ -81,22 +81,22 @@
         </div>
       </aside>
 
-      <nav class="nav" role='navigation'>
+      <nav class="nav">
         <div class="nav__content">
-          <ul class="nav__lists" role='list'>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="1">Qui sommes-nous ?</a></li>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="2">Nos règles</a></li>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="3">Nos types de patients</a></li>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="4">Nos actualités</a></li>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="5">Livre d'or</a></li>
-            <li class="nav__item"><a href="#" class="nav__link" tabindex="6">Contactez-nous</a></li>
+          <ul class="nav__lists">
+            <li class="nav__item"><a href="#section__aboutUs" class="nav__link" tabindex="1" title='lien vers la section qui sommes nous'>Qui sommes-nous ?</a></li>
+            <li class="nav__item"><a href="#section__rules" class="nav__link" tabindex="2" title='lien vers la section nos règles'>Nos règles</a></li>
+            <li class="nav__item"><a href="#section__categories" class="nav__link" tabindex="3" title='lien vers la section nos types de patients'>Nos types de patients</a></li>
+            <li class="nav__item"><a href="#section__news" class="nav__link" tabindex="4" title='lien vers la section nos actualités'>Nos actualités</a></li>
+            <li class="nav__item"><a href="#section__guestBook" class="nav__link" tabindex="5" title="lien vers la section livre d'or">Livre d'or</a></li>
+            <li class="nav__item"><a href="#" class="nav__link" tabindex="6" title='lien vers la section contactez-nous'>Contactez-nous</a></li>
             <li class="nav__item"><a href="connexion.html" class="nav__button" tabindex="7">Connexion</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="section section__aboutUs section__container">
+    <section class="section section__aboutUs section__container" id="section__aboutUs">
       <div class="section__header">
         <h2 class="section__title">Qui sommes nous ?</h2>
         <div class="section__logo">
@@ -123,7 +123,7 @@
       </div>
     </section>
 
-    <section class="section section__rules">
+    <section class="section section__rules" id="section__rules">
       <div class="section__filter"></div>
       <div class="section__header">
         <h2 class="section__title">nos règles</h2>
@@ -136,9 +136,9 @@
           </div>
           <div class="card__content">
             <div class="card__picture">
-              <span class="icon icon__free"></span>
+              <span class="icon icon__free" aria-describedby="card__contentFree"></span>
             </div>
-            <p class="paragraph" role="contentinfo">Toute auscultation est gratuite et effectuée par nos experts bénévoles.
+            <p class="paragraph" role="contentinfo" id="card__contentFree">Toute auscultation est gratuite et effectuée par nos experts bénévoles.
             Vous pouvez nous rejoindre ou nous soutenir sous forme de don ou de bénévolat.</p>
           </div>
         </article>
@@ -148,9 +148,9 @@
           </div>
           <div class="card__content">
             <div class="card__picture">
-              <span class="icon icon__onlyOne"></span>
+              <span class="icon icon__onlyOne" aria-describedby="card__contentOnlyOne"></span>
             </div>
-            <p class="paragraph" role="contentinfo">Les visiteurs ne présentent qu’un objet. Une fois la première réparation effectuée; Ils peuvent retourner à l'accueil et faire la queue pour un deuxième objet.
+            <p class="paragraph" role="contentinfo" id="card__contentOnlyOne">Les visiteurs ne présentent qu’un objet. Une fois la première réparation effectuée; Ils peuvent retourner à l'accueil et faire la queue pour un deuxième objet.
             </p>
           </div>
         </article>
@@ -160,9 +160,9 @@
           </div>
           <div class="card__content">
             <div class="card__picture">
-              <span class="icon icon__doctor"></span>
+              <span class="icon icon__doctor" aria-describedby="card__contentDoctor"></span>
             </div>
-            <p class="paragraph" role="contentinfo">Il se fait via ce site, grâce à des photos et aux symptômes qu’il présente.
+            <p class="paragraph" role="contentinfo" id="card__contentDoctor">Il se fait via ce site, grâce à des photos et aux symptômes qu’il présente.
             Nos bénévoles pourront alors prédéterminer les pièces de rechange ou les objets à apporter.
             </p>
           </div>
@@ -173,9 +173,9 @@
           </div>
           <div class="card__content">
             <div class="card__picture">
-              <span class="icon icon__syringe"></span>
+              <span class="icon icon__syringe" aria-describedby="card__contentSyringe"></span>
             </div>
-            <p class="paragraph" role="contentinfo">Votre présence est requise ! Vous supervisez la réparation, grâce aux conseils du réparateur.
+            <p class="paragraph" role="contentinfo" id="card__contentSyringe">Votre présence est requise ! Vous supervisez la réparation, grâce aux conseils du réparateur.
             Vous observez dans le but d'être apte à soigner cet objet s’il fait une rechute.
             </p>
           </div>
@@ -186,9 +186,9 @@
           </div>
           <div class="card__content">
             <div class="card__picture">
-              <span class="icon icon__rip"></span>
+              <span class="icon icon__rip" aria-describedby="card__contentRip"></span>
             </div>
-            <p class="paragraph" role="contentinfo">Nous faisons de notre mieux mais parfois il est impossible de réanimer votre objet.
+            <p class="paragraph" role="contentinfo" id="card__contentRip">Nous faisons de notre mieux mais parfois il est impossible de réanimer votre objet.
             Vous devrez repartir avec pour organiser les obsèques.
             </p>
           </div>
@@ -213,7 +213,7 @@
       </div>
     </section>
 
-    <section class="section section__categories">
+    <section class="section section__categories" id="section__categories">
       <div class="section__header">
         <h2 class="section__title">nos types de patients</h2>
         <h3 class="section__subtitle">A quelle catégorie appartient votre objet ?</h3>
@@ -223,72 +223,72 @@
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="8">
               <div class="group__categoryContent">
-                <span class="icon icon__clothes"></span>
-                <p class="group__categoryDescription">Vêtements</p>
+                <span class="icon icon__clothes" aria-describedby="category__clothes"></span>
+                <p class="group__categoryDescription" id="category__clothes">Vêtements</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="9">
               <div class="group__categoryContent">
-                <span class="icon icon__toy"></span>
-                <p class="group__categoryDescription">Jouets</p>
+                <span class="icon icon__toy" aria-describedby="category__toy"></span>
+                <p class="group__categoryDescription" id="category__toy">Jouets</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="10">
               <div class="group__categoryContent">
-                <span class="icon icon__furniture"></span>
-                <p class="group__categoryDescription">Meubles</p>
+                <span class="icon icon__furniture" aria-describedby="category__furniture"></span>
+                <p class="group__categoryDescription" id="category__furniture">Meubles</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="11">
               <div class="group__categoryContent">
-                <span class="icon icon__speakerRadio"></span>
-                <p class="group__categoryDescription">Appareils</p>
+                <span class="icon icon__speakerRadio" aria-describedby="category__speaker"></span>
+                <p class="group__categoryDescription" id="category__speaker">Appareils</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="12">
               <div class="group__categoryContent">
-                <span class="icon icon__bike"></span>
-                <p class="group__categoryDescription">Transports</p>
+                <span class="icon icon__bike" aria-describedby="category__bike"></span>
+                <p class="group__categoryDescription" id="category__bike">Transports</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="13">
               <div class="group__categoryContent">
-                <span class="icon icon__plate"></span>
-                <p class="group__categoryDescription">Vaiselles</p>
+                <span class="icon icon__plate" aria-describedby="category__plate"></span>
+                <p class="group__categoryDescription" id="category__plate">Vaiselles</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="14">
               <div class="group__categoryContent">
-                <span class="icon icon__kitchenUtensils"></span>
-                <p class="group__categoryDescription">Petits éléctroménagers</p>
+                <span class="icon icon__kitchenUtensils" aria-describedby="category__kitchen"></span>
+                <p class="group__categoryDescription" id="category__kitchen">Petits éléctroménagers</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="15">
               <div class="group__categoryContent">
-                <span class="icon icon__dishwasher"></span>
-                <p class="group__categoryDescription">Gros électroménagers</p>
+                <span class="icon icon__dishwasher" aria-describedby="category__dishwasher"></span>
+                <p class="group__categoryDescription" id="category__dishwasher">Gros électroménagers</p>
               </div>
             </a>
           </article>
           <article class="group__category">
             <a href="" class='group__categoryLink' tabindex="16">
               <div class="group__categoryContent">
-                <span class="icon icon__lamp"></span>
-                <p class="group__categoryDescription">Autres</p>
+                <span class="icon icon__lamp" aria-describedby="category__lamp"></span>
+                <p class="group__categoryDescription" id="category__lamp">Autres</p>
               </div>
             </a>
           </article>
@@ -296,7 +296,7 @@
       </div>
     </section>
 
-    <section class='section section__news section__slider'>
+    <section class='section section__news section__slider' id="section__news">
       <div class="section__header">
         <h2 class="section__title">Nos actualités</h2>
       </div>
@@ -391,7 +391,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -411,7 +411,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -431,7 +431,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -451,7 +451,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -471,7 +471,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -491,7 +491,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -511,7 +511,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -537,7 +537,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal'  >
+                  <button class='card__openModal'  type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -562,7 +562,7 @@
       </div>
     </section>
 
-    <section class='section section__guestBook section__slider'>
+    <section class='section section__guestBook section__slider' id="section__guestBook">
       <div class="section__header">
         <h2 class="section__title">LIVRE D’OR</h2>
       </div>
@@ -664,7 +664,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -683,7 +683,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -702,7 +702,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -721,7 +721,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -740,7 +740,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -759,7 +759,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -778,7 +778,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -797,7 +797,7 @@
                   </p>
                 </div>
                 <div class="card__footer">
-                  <button class='card__openModal' >
+                  <button class='card__openModal' type="button">
                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                   </button>
                 </div>
@@ -841,7 +841,7 @@
     <div id="modal" class="modal">
       <div class="modal__content">
         <div class="modal__tools">
-          <button class="modal__tool modal__close" >
+          <button class="modal__tool modal__close" type="button">
             <i class="fa fa-close"></i>
           </button>
           <a class="modal__tool modal__share" href='http://www.facebook.com' target='_blank'>
