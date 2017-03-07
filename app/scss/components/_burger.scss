@@ -40,6 +40,7 @@
 .header__burger.open {
   position: fixed;
   right: 2.5%;
+  top: 11px;
   span {
     background: $concrete-white;
     &:nth-child(1) {
