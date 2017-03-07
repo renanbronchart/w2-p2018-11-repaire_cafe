@@ -28,3 +28,12 @@
     transform: scale(1);
   }
 }
+
+@keyframes menuAnimationOpen {
+  0% {
+    right: -260px;
+  }
+  100% {
+    right: 0;
+  }
+}
