@@ -1,6 +1,7 @@
 var modal = function() {
   var $modal = $('#modal');
   var $body = $('body');
+  var $ligthbox = $('.lightbox');
 
   var init = function() {
     $('.card').each(function() {
@@ -19,6 +20,7 @@ var modal = function() {
 
         $body.addClass('body--noScroll');
         $modal.addClass('modal--active');
+        $ligthbox.addClass('lightbox--active');
 
         closeModalKeyPress();
       })
@@ -34,6 +36,7 @@ var modal = function() {
   var closeModal = function() {
     $modal.removeClass('modal--active');
     $body.removeClass('body--noScroll');
+    $ligthbox.removeClass('lightbox--active');
   };
 
   var closeModalKeyPress = function() {

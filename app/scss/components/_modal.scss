@@ -1,5 +1,7 @@
 .modal {
   position: fixed;
+  align-items: center;
+  justify-content: center;
   top: 0;
   bottom: 0;
   left: 0;
@@ -9,24 +11,25 @@
 
 .modal__content {
   width: 90%;
-  height: 80%;
-  position: absolute;
-  top: 10%;
-  left: 5%;
+  height: auto;
+  min-height: 40%;
+  max-height: 80%;
+  position: relative;
+  display: flex;
   background: #ffffff;
   opacity: 0.95;
   @include medium {
     width: 70%;
-    left: 15%;
   }
   @include large {
     width: 50%;
-    left: 25%;
   }
 }
 
 .modal--active {
-  display: block;
+  display: flex;
+  z-index: $z-index-modal;
+  animation: fadeIn 0.4s forwards;
 }
 
 .modal__details {
@@ -34,6 +37,12 @@
   padding: 70px 20px;
   overflow: hidden;
   overflow-y: scroll;
+  @include medium {
+    padding: 70px 40px;
+  }
+  @include large {
+    padding: 70px;
+  }
 }
 
 .modal__tools {

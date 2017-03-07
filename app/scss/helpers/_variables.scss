@@ -1,7 +1,6 @@
 ////////////
 // colors //
 ////////////
-
 $concrete-white: #f2f2f2;
 $victoria-purple: #5c458d;
 $cinnabar-orange: #e79028;
@@ -24,12 +23,18 @@ $font-size-icon: 3.5rem;
 ///////////////////
 // Break points  //
 ///////////////////
-
 $screen-sm-min: 768px;
 $screen-md-min: 1280px;
 
 ///////////////////
 //    Images     //
 ///////////////////
-
 $directory-image: 'https://s3.eu-west-2.amazonaws.com/';
+
+///////////////////
+//   z-index     //
+///////////////////
+$z-index-modal: 300;
+$z-index-iconBurger: 250;
+$z-index-navAside: 200;
+$z-index-lightbox: 100;

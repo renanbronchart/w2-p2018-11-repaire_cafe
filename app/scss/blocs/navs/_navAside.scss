@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   right: -260px;
-  z-index: 2;
+  z-index: $z-index-navAside;
   background: $chambray-blue;
   overflow: hidden;
   transition: 0.5s;

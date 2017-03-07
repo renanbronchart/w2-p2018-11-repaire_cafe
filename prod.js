@@ -3,7 +3,6 @@ var path = require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 var CleanWebpackPlugin = require('clean-webpack-plugin');
-var isProd = (process.env.NODE_ENV === 'production');
 
 var extractSass = new ExtractTextPlugin({
   filename: "../css/[name].css",
@@ -49,7 +48,6 @@ module.exports = function (env) {
             {
               loader: "sass-loader"
             }],
-            // use style-loader in development
             fallback: "style-loader"
           })
         },
@@ -74,7 +72,6 @@ module.exports = function (env) {
         root   : path.resolve( __dirname, './' ),
         verbose: true,
         dry: false
-        // exclude: ['shared.js']
       })
     ]
   }
