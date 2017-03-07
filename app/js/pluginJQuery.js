@@ -16,8 +16,6 @@ var pluginsJquery = {
         heightBlocks.push(heightBlock);
       });
 
-      console.log(heightBlocks);
-
       var maxHeight = Math.max.apply(null, heightBlocks);
 
       $this.outerHeight(maxHeight);

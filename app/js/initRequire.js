@@ -12,6 +12,7 @@ var initRequire = function initRequire() {
       require('./buttonNavigation.js');
       require('./modal.js');
       require('./menu.js');
+      require('./smothScroll.js');
     }, 500);
   }
 
