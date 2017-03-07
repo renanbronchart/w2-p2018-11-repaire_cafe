@@ -55,6 +55,7 @@
   color: $chambray-blue;
   cursor: not-allowed;
   opacity: 0.5;
+
   .fa {
     font-size: 1.6rem;
     line-height: 2.6rem; // corespond to line-height navigation__CurrentSection
@@ -64,6 +65,10 @@
     cursor: pointer;
     color: $cinnabar-orange;
     opacity: 1;
+
+    .fa {
+      color: $cinnabar-orange;
+    }
   }
 }
 

@@ -3,7 +3,7 @@ var menu = function () {
 
   var init = function () {
     $('.header__burger').on('click', function () {
-      $('.lightbox').toggleClass('active');
+      $('.lightbox').toggleClass('lightbox--active');
       $('.navAside').toggleClass('active');
       $('body').toggleClass('body--noScroll');
       $(this).toggleClass('open');
@@ -17,8 +17,8 @@ var menu = function () {
     toggleNavList();
   };
 
-  var closeNavAside = function() {
-    $('.lightbox.active').removeClass('active');
+  var closeNavAside = function () {
+    $('.lightbox.lightbox--active').removeClass('lightbox--active');
     $('.navAside.active').removeClass('active');
     $('.header__burger.open').removeClass('open');
     $('body').removeClass('body--noScroll');
