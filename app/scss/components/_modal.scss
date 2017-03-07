@@ -27,6 +27,7 @@
 
 .modal--active {
   display: block;
+  animation: fadeIn 0.4s forwards;
 }
 
 .modal__details {
