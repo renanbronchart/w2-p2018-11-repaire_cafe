@@ -16,7 +16,7 @@ $ npm install
 $ npm install webpack-dev-server -g # you might need "sudo" before that if you get an error
 $ npm run dev
 ```
-Your site should now be running at http://localhost:3000
+Your site should now be running at http://localhost:8080
 
 
 ## Guidlines.
@@ -57,5 +57,3 @@ footer {
 ```
 
 • Use BEM namming
-
-... In progress ...

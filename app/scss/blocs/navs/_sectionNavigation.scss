@@ -37,6 +37,9 @@
 
 .navigation__text {
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: $cinnabar-orange;
 }
 
@@ -51,10 +54,10 @@
   text-decoration: none;
   color: $chambray-blue;
   cursor: not-allowed;
-  display: inline-block;
   opacity: 0.5;
   .fa {
-    @include font-size(1.6rem);
+    font-size: 1.6rem;
+    line-height: 2.6rem; // corespond to line-height navigation__CurrentSection
   }
 
   &--active {

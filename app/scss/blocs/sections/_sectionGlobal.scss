@@ -27,7 +27,26 @@
 .section__title {
   @extend .h3;
   text-transform: uppercase;
+  position: relative;
+
+  .section__titleLink {
+    padding: 0 10px;
+    position: absolute;
+    right: 10%;
+  }
+
+  .icon__add {
+    @include font-size(1.5rem);
+    color: $chambray-blue;
+    @include medium {
+      @include font-size(1.7rem);
+    }
+    @include large {
+      @include font-size(2rem);
+    }
+  }
 }
+
 
 .section__subtitle {
   @extend .p;

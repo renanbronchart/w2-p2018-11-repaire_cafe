@@ -29,20 +29,20 @@ h1, h2, h3, h4, h5, h6, p, a {
 .h2 {
   @include font-size(1.7rem);
   @include medium {
-    @include font-size(1.9rem);
+    @include font-size(1.8rem);
   }
   @include large {
-    @include font-size(2.1rem);
+    @include font-size(1.9rem);
   }
 }
 
 .h3 {
   @include font-size(1.5rem);
   @include medium {
-    @include font-size(1.7rem);
+    @include font-size(1.6rem);
   }
   @include large {
-    @include font-size(2rem);
+    @include font-size(1.8rem);
   }
 }
 

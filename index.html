@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>W2 Mobile First Project</title>
-  <!-- <script src="https://use.fontawesome.com/0d05212486.js"></script> -->
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -27,7 +26,7 @@
       <h1 class="header__logo">
         <a href="#" tabindex="-1" title='retour à la home'>
           <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color.svg" alt="logo repaire café" class='header__logoImg'/>
-          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.svg" alt="Logo Repaire Cafe" class="header__logoImg header__logoImg--mobile">
+          <img src="https://s3.eu-west-2.amazonaws.com/repairecafe/home/repaire-logo-color-min.svg" alt="petit logo repaire café" class="header__logoImg header__logoImg--mobile">
         </a>
       </h1>
       <div class="header__burger" role='button' aria-label="navAside">
@@ -49,11 +48,11 @@
           <div class="navAside__content">
             <a href="" class="navAside__button" title='menu navigation'>Menu</a>
             <ul class="navAside__lists">
-              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section qui sommes nous'>Qui sommes-nous ?</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos règles'>Nos règles</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos types de patients'>Nos types de patients</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section nos actualités'>Nos actualités</a></li>
-              <li class="navAside__item"><a href="" class="navAside__link" title="lien vers la section livre d'or">Livre d'or</a></li>
+              <li class="navAside__item"><a href="#section__aboutUs" class="navAside__link" title='lien vers la section qui sommes nous'>Qui sommes-nous ?</a></li>
+              <li class="navAside__item"><a href="#section__rules" class="navAside__link" title='lien vers la section nos règles'>Nos règles</a></li>
+              <li class="navAside__item"><a href="#section__categories" class="navAside__link" title='lien vers la section nos types de patients'>Nos types de patients</a></li>
+              <li class="navAside__item"><a href="#section__news" class="navAside__link" title='lien vers la section nos actualités'>Nos actualités</a></li>
+              <li class="navAside__item"><a href="#section__guestBook" class="navAside__link" title="lien vers la section livre d'or">Livre d'or</a></li>
               <li class="navAside__item"><a href="" class="navAside__link" title='lien vers la section contactez-nous'>Contactez-nous</a></li>
             </ul>
 
@@ -201,9 +200,11 @@
               <a href="#" class='navigation__button navigation__buttonPrev'>
                 <i class="fa fa-chevron-left"></i>
               </a>
-              <span class="navigation__CurrentSection" id='navigation__CurrentSection'>1</span>
-              /
-              <span class="navigation__allSections">5</span>
+              <span class="navigation__number">
+                <span class="navigation__CurrentSection" id='navigation__CurrentSection'>1</span>
+                /
+                <span class="navigation__allSections">5</span>
+              </span>
               <a href="#" class='navigation__button navigation__buttonNext navigation__button--active'>
                 <i class="fa fa-chevron-right"></i>
               </a>
@@ -564,7 +565,11 @@
 
     <section class='section section__guestBook section__slider' id="section__guestBook">
       <div class="section__header">
-        <h2 class="section__title">LIVRE D’OR</h2>
+        <h2 class="section__title">LIVRE D’OR
+          <a href="#" class='section__titleLink' title='Rajouter un commentaire'>
+            <span class="icon icon__add"></span>
+          </a>
+        </h2>
       </div>
       <div class="section__body">
         <div class="slider__header">
