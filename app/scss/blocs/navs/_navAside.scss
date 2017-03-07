@@ -7,10 +7,11 @@
   z-index: $z-index-navAside;
   background: $chambray-blue;
   overflow: hidden;
+  display: none;
   transition: 0.5s;
-  &.active{
-    right: 0;
-    transition: 0.5s;
+  &.navAside--active {
+    display: block;
+    animation: menuAnimationOpen 0.4s forwards;
   }
 }
 
