@@ -9,9 +9,9 @@
   overflow: hidden;
   display: none;
   transition: 0.5s;
-  &.active {
+  &.navAside--active {
     display: block;
-    animation: menuAnimation 0.4s forwards;
+    animation: menuAnimationOpen 0.4s forwards;
   }
 }
 
